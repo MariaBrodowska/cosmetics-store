@@ -1,0 +1,155 @@
+body{
+    background: rgb(255, 246, 233);
+    margin-top: 0;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+#nav1{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 8px;
+}
+#nav2{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 0;   
+    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+#nav1 img{
+    width: 30px;
+    margin-bottom: 0;
+    margin: 0 30px;
+}
+#nav1 a,#nav2 a{
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#nav1 li{
+    margin-top: 0;
+    font-size: 14px;
+}
+#nav1 li:hover{
+    font-size: 16px;
+}
+#nav1 img:hover{
+    width: 33px;
+}
+#nav2 li{
+    margin-right: 10px;
+}
+#nav2 li:hover{
+    font-size: 18px;
+    font-weight: 500;
+}
+#nav2 a:hover{
+    color: rgb(118, 179, 27);
+}
+header{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+}
+#cosmetics{
+    font-size: 13px;
+    margin-top: 0;
+}
+.material-symbols-outlined{
+    width: 100%;
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: rgb(250, 235, 213);
+    transition: background 0.25s;
+    transition: box-shadow 0.25s;
+
+}
+.search:focus-within{
+    background: rgb(255, 240, 218);
+    box-shadow: 0 0 2px rgb(0,0,0,0.75);
+}
+.search-input{
+    font-size: 16px;
+    color: #333333;
+    margin: 0 14px;
+    font-family: 'Lexend', sans-serif;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.search-input::placeholder,
+.search-icon{
+    color: rgb(0,0,0,0.25);
+}
+#zdjecia{
+    display: grid;
+    grid-template: 50% 40% / 40% 22% 30%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 500px;
+}
+#zdjecia img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+#baner1{
+    grid-column: 1 / 3;
+    background: url("zdjecia/tlo123.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+#baner3{
+    grid-area: 1 / 3 / 3;
+    text-align: center;
+}
+#baner2{
+    grid-area: 2 / 1;
+}
+#baner4{
+    grid-area: 2 / 2;
+}
+#baner1 a{
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+#baner1 a:hover{
+    font-size: 21px;
+}
+#bs{
+    font-size: 10px;
+}
+#bs:hover{
+    font-size: 11px;
+}
