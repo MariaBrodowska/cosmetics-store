@@ -10,6 +10,7 @@
     <title>Kosmetyki ARIA - Kosmetyki online</title>
 </head>
 <body>
+    <div id="container">
     <div id="logo">
         <header>ARIA<br></header>
         <span id="cosmetics">cosmetics</span>
@@ -22,7 +23,8 @@
                     <span class="search-icon material-symbols-outlined">search</span>
                 </div>
             </form>
-            <li><a href="login-page.html"><img src="zdjecia/avatar.png"></a></li>
+            <li><button id="avatar" type="submit" onclick="openUser()"><img src="zdjecia/avatar.png"></button></li>
+            <!-- <li><a onclick="openUser()" href=""><img src="zdjecia/avatar.png"></a></li> -->
             <li><a href=""><img src="zdjecia/shop2.png"></a></li>
         </ul>
         <ul id="nav2">
@@ -86,7 +88,7 @@
         </ul>
     </nav>
     <main>
-        <section class="user">
+        <section class="user" id="user">
             <div class="logowanie">
                 <h3>Mam już konto</h3>
                 <label>Adres e-mail*</label><br><input type="text"><br>
@@ -96,6 +98,7 @@
                 <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
             </div>
             <div class="rejestracja">
+                <button class="close" type="button" onclick="closeUser()"><img src="zdjecia/cross.png"></button>
                 <h3>Nie masz konta?<br>Załóż konto</h3>
                 <ul>
                     <li>Sprawdzaj stan zamówienia</li>
@@ -103,7 +106,7 @@
                     <li>Personalizowanie oferty</li>
                     <li>...i więcej!</li>
                 </ul><br>
-                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk"><br>
+                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" href="register-page.html"><br>
             </div>
         </section>
         <section>
@@ -127,5 +130,6 @@
     </main>
     <footer>&copy; 2024 MB</footer>
     <script src="main.js"></script>
+</class>
 </body>
 </html>

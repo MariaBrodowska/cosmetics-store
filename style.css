@@ -29,12 +29,26 @@ nav{
     margin-left: 0;   
     margin-bottom: 0;
 }
-#nav1 img{
+#nav1 img,#avatar{
     width: 30px;
     margin-bottom: 0;
     margin: 0 30px;
 }
-#nav1 a,#nav2 a{
+.close{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(66, 66, 66);
+    align-self: flex-end;
+}
+.close:hover{
+    cursor: pointer;
+}
+.close img{
+    width: 10px;
+}
+#nav1 a,#nav2 a, #avatar{
     text-decoration: none;
     border-bottom: none;
     color: black;
@@ -43,6 +57,13 @@ nav{
     justify-content: center;
     text-align: center;
     flex-direction: column;
+}
+#avatar{
+    background-color: transparent;
+    border: none;
+}
+#avatar:hover{
+    cursor: pointer;
 }
 #nav1 li{
     margin-top: 0;
@@ -269,14 +290,25 @@ h2{
     height: 70%;
     background-color: white;
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0.1);
     display: flex;
     border-radius: 20px;
     border-bottom: 5px dashed black;
     border-right: 5px dashed black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    -webkit-box-shadow: 0px 0px 250px 300px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 250px 300px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 250px 300px rgba(0,0,0,0.68);
 }
+.open-user{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
 .logowanie{
     width: 55%;
     display: flex;
@@ -303,6 +335,7 @@ h2{
     font-weight: bold;
     transition: all .3s;
 }
+/* rgb(155, 202, 85); */
 .przycisk:hover{
     background-color: rgb(127, 165, 69);
     color: white;
