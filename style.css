@@ -69,7 +69,47 @@ nav{
     color: rgb(118, 179, 27);
 }
 #nav2 a:hover{
-    color: rgb(118, 179, 27);
+    color: rgb(118,  179, 27);
+}
+#nav2 li ul{
+    overflow: hidden;
+    display: none;
+}
+#nav2 ul li{
+    /* border-bottom: 1px solid black; */
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    color: black;
+    transition: 0.3s;
+}
+#nav2 ul li::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(118, 179, 27);
+    transition: 0.3s;
+}
+#nav2 ul li:hover::before{
+    width: 100%;
+}
+/* #nav2 ul li:hover{
+    border-bottom: 2px solid rgb(118, 179, 27);
+} */
+#nav2 li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 246, 233);
+    border: 2px solid rgb(118, 179, 27);
+    border-radius: 20px;
+    margin: 2% 0;
+    padding: 10px 10px;
+    width: 200px;
 }
 header{
     font-size: 40px;
@@ -223,4 +263,64 @@ h2{
     background-color: rgb(142, 185, 77);
     color: white;
     cursor: pointer;
+}
+.user{
+    width: 700px;
+    height: 70%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-radius: 20px;
+    border-bottom: 5px dashed black;
+    border-right: 5px dashed black;
+}
+.logowanie{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 30px;
+}
+.rejestracja{
+    width: 45%;
+    background-color: #F9F9FB;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.przycisk{
+    align-self: center;
+    /* background-color: rgb(142, 185, 77); */
+    background-color: rgb(234, 255, 204);
+    border: 2px solid rgb(127, 165, 69);
+    color: rgb(127, 165, 69);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.przycisk:hover{
+    background-color: rgb(127, 165, 69);
+    color: white;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+#przypomnienie{
+    align-self: center;
+    font-size: 10px;
+    color: black;
+}
+#zgoda{
+    font-size: 14px;
+    color: rgb(101, 133, 53);
+}
+h3{
+    font-size: 28px;
+}
+#box{
+    margin-left: 0;
 }
