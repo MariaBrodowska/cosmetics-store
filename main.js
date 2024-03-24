@@ -5,3 +5,6 @@ function openUser(){
 function closeUser(){
     user.classList.remove("open-user");
 }
+function back(){
+    
+}

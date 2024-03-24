@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style-register.css" type="text/css">
     <link rel="stylesheet" href="css/fontello.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
@@ -14,81 +15,22 @@
         <header>ARIA<br></header>
         <span id="cosmetics">cosmetics</span>
     </div>
-    <nav>
-        <ul id="nav1">
-            <form>
-                <div class="search">
-                    <input class="search-input" type="search" placeholder="Szukaj">
-                    <span class="search-icon material-symbols-outlined">search</span>
-                </div>
-            </form>
-            <li><a href="login-page.html"><img src="zdjecia/avatar.png"></a></li>
-            <li><a href=""><img src="zdjecia/shop2.png"></a></li>
-        </ul>
-        <ul id="nav2">
-            <li><a href="index.html">STRONA GŁÓWNA</a></li>
-            <li><a href="">TWARZ</a>
-            <ul>
-                <li><a href="">Oczyszczanie i demakijaż</a></li>
-                <li><a href="">Pielęgnacja twarzy</a></li>
-                <li><a href="">Pielęgnacja ust</a></li>
-            </ul>
-            </li>
-            <li><a href="">MAKIJAŻ</a>
-            <ul>
-                <li><a href="">Twarz</a></li>
-                <li><a href="">Oczy</a></li>
-                <li><a href="">Brwi</a></li>
-                <li><a href="">Usta</a></li>
-                <li><a href="">Akcesoria do makijażu</a></li>
-            </ul>
-            </li>
-            <li><a href="">PAZNOKCIE</a>
-            <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Manicure hybrydowy i żelowy</a></li>
-                <li><a href="">Manicure klasyczny</a></li>
-                <li><a href="">Akcesoria do paznokci</a></li>
-            </ul>
-            </li>
-            <li><a href="">WŁOSY</a>
-            <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Koloryzacja</a></li>
-                <li><a href="">Stylizacja</a></li>
-                <li><a href="">Akcesoria do włosów</a></li>
-            </ul>   
-            </li>
-            <li><a href="">CIAŁO</a>
-            <ul>
-                <li><a href="">Pielęgnacja ciała</a></li>
-                <li><a href="">Pielęgnacja dłoni</a></li>
-                <li><a href="">Pielęgnacja Stóp</a></li>
-            </ul>
-            </li>
-            <li><a href="">ZAPACHY</a>
-            <ul>
-                <li><a href="">Perfumy damskie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
-            </ul>
-            </li>
-            <!-- <li><a href="">ZESTAWY</a></li> -->
-            <li><a href="">DLA NIEGO</a>
-            <ul>
-                <li><a href="">Twarz i ciało</a></li>
-                <li><a href="">Włosy</a></li>
-                <li><a href="">Golenie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
-            </ul>
-            </li>
-            <li><a href="">O NAS</a></li>
-            <li><a href="">KONTAKT</a></li>
-        </ul>
-    </nav>
+    <button type="button" onclick="back()" id="return"><img src="zdjecia/return.png"></button>
     <main>
+        <h3>Załóż konto</h3>
         <section>
-            
+            * pola obowiązdkowe<br><br>
+            <label>Adres e-mail*</label><br><input type="text"><br>
+            <label>Hasło*</label><br><input type="password"><br>
+            <label>Imię*</label><br><input type="text"><br>
+            <label>Nazwisko*</label><br><input type="text"><br>
+            <label>Numer telefonu*</label><br><input type="number"><br>
+            <label>Data urodzenia</label><br><input type="date"><br>
+            <div id="check"><input type="checkbox" name="zgoda" value="zgoda"><a id="zgoda" href="regulamin.html">*Zapoznałem/am się z zasadami korzystania z serwisu.</a></div><br>
+            <div id="check"><input type="checkbox" name="zgoda2" value="zgoda2"><a id="zgoda">Chcę otrzymywać informacje o produktach i usługach.</a></div><br><br>
+            <input type="submit" value="ZAŁÓŻ KONTO ARIA" class="przycisk"><br>
         </section>
+        <br>
     </main>
     <footer>&copy; 2024 MB</footer>
     <script src="main.js"></script>
