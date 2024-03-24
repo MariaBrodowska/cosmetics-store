@@ -29,3 +29,10 @@ character.addEventListener('mouseleave', () => {
 character.addEventListener('click', () => {
     window.location.href = "kontakt.html";
 });
+let koszyk = document.getElementById('koszyk');
+koszyk.addEventListener('click', () => {
+    window.location.href = "koszyk.html";
+});
+function closeKoszyk(){
+    location.replace("index.html");
+}

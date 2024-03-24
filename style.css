@@ -62,7 +62,7 @@ nav{
     background-color: transparent;
     border: none;
 }
-#avatar:hover{
+#avatar:hover,#koszyk:hover{
     cursor: pointer;
 }
 #nav1 li{
@@ -224,6 +224,9 @@ header{
 #baner4{
     grid-area: 2 / 2;
     animation: slideInRight 1s cubic-bezier(0.19,1,0.22,1);
+    background: url("zdjecia/tlo5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #baner1 a{
     text-decoration: none;
