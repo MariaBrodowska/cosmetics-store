@@ -56,11 +56,6 @@ input:focus-within{
 body{
     background-color: #F9F9FB;
 }
-input[type=checkbox]:focus-within{
-    background-color: transparent;
-    box-shadow: none;
+h3{
+    font-size: 33px;
 }
-/* #check{
-    display: flex;
-    flex-direction: column;
-} */

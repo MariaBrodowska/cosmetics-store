@@ -5,6 +5,27 @@ function openUser(){
 function closeUser(){
     user.classList.remove("open-user");
 }
-function back(){
-    
+function openRegister(){
+    location.replace("register-page.html");
 }
+function closeRegister(){
+    sessionStorage.setItem('openUser', 'true');
+    location.replace("index.html");
+}
+window.onload = function(){
+    if(sessionStorage.getItem('openUser')==='true'){
+        setTimeout(openUser,1000);
+        sessionStorage.removeItem('openUser');
+    }
+}
+let dymek = document.getElementById('dymek');
+let character = document.getElementById('character');
+character.addEventListener('mouseenter', () => {
+    dymek.style.visibility = 'visible';
+});
+character.addEventListener('mouseleave', () => {
+    dymek.style.visibility = 'hidden';
+});
+character.addEventListener('click', () => {
+    window.location.href = "kontakt.html";
+});

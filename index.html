@@ -93,7 +93,7 @@
                 <h3>Mam już konto</h3>
                 <label>Adres e-mail*</label><br><input type="text"><br>
                 <label>Hasło*</label><br><input type="password"><br>
-                <div id="check"><input type="checkbox" name="zgoda" value="zgoda"><a id="zgoda" href="regulamin.html">Zapoznałem/am się z zasadami korzystania z serwisu</a></div><br>
+                <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
                 <input type="submit" value="ZALOGUJ SIĘ" class="przycisk"><br>
                 <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
             </div>
@@ -106,7 +106,7 @@
                     <li>Personalizowanie oferty</li>
                     <li>...i więcej!</li>
                 </ul><br>
-                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" href="register-page.html"><br>
+                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="register-page.html"><br>
             </div>
         </section>
         <section>
@@ -127,6 +127,10 @@
             <br><br>Zapraszamy do naszego sklepu, aby odkryć tajemnice naturalnej pielęgnacji i poczuć się pięknie od środka na zewnątrz. Dołącz do naszej społeczności, która stawia na zdrowie, piękno i odpowiedzialność.
             <button class="dolacz" href="logowanie.html">Dołącz do nas!</button>
         </section>
+        <div id="tlo">
+            <div id="dymek">Masz pytania?<br>Skontaktuj się z nami!</div>
+            <div id="character"></div>
+        </div>
     </main>
     <footer>&copy; 2024 MB</footer>
     <script src="main.js"></script>

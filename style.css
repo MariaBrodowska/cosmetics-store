@@ -1,5 +1,5 @@
 body{
-    background: rgb(255, 246, 233);
+    background: #fff6e9;
     margin-top: 0;
 }
 #logo{
@@ -126,7 +126,7 @@ nav{
     display: block;
     position: absolute;
     background-color: rgb(255, 246, 233);
-    border: 2px solid rgb(118, 179, 27);
+    border: 2px solid #76b31b;
     border-radius: 20px;
     margin: 2% 0;
     padding: 10px 10px;
@@ -356,4 +356,126 @@ h3{
 }
 #box{
     margin-left: 0;
+}
+.user input{
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(187, 187, 187);
+    transition: all 0.25s;
+    outline: none;
+    background: transparent;
+}
+.user input:focus-within{
+    background-color: #F9F9FB;
+    box-shadow: 0 0 5px rgb(142, 185, 77);
+}
+#zapamietaj{
+    font-size: 14px;
+}
+#check{
+    display: flex;
+    align-items: center;
+}
+input[type=checkbox]:focus-within{
+    background-color: transparent;
+    box-shadow: none;
+}
+#character{
+    text-decoration: none;
+    width: 80px;
+    height: 110px;
+    background: url("zdjecia/c1.png");
+    background-size: 100% 100%;
+    animation: change 9s infinite;
+    align-self: flex-end;
+}
+#dymek{
+    height: 50px;
+    width: 150px;
+    align-self: center;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px dashed rgb(142, 185, 77);
+    visibility: hidden;
+}
+#character:hover{
+    cursor: pointer;
+}
+#tlo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    right: 2%;
+    bottom: -300px;
+    height: 200px;
+    width: 160px;
+    animation: slideInTop 1.3s cubic-bezier(0.19,1,0.22,1) 2.5s 1, bounce 2s linear 2.5s infinite;
+}
+@keyframes bounce{
+    0%{
+        bottom: 10px;
+    }
+    25%{
+        bottom: 12px;
+    }
+    50%{
+        bottom: 20px;
+    }
+    75%{
+        bottom: 17px;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
+@keyframes slideInTop{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes change{
+    0%{
+        background: url("zdjecia/c1.png");
+        background-size: 100% 100%;
+    }
+    12.5%{
+        background: url("zdjecia/c2.png");
+        background-size: 100% 100%;
+    }
+    25%{
+        background: url("zdjecia/c3.png");
+        background-size: 100% 100%;
+    }
+    37.5%{
+        background: url("zdjecia/c4.png");
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url("zdjecia/c10.png");
+        background-size: 100% 100%;
+    }
+    62.5%{
+        background: url("zdjecia/c3.png");
+        background-size: 100% 100%;
+    }
+    75%{
+        background: url("zdjecia/c4.png");
+        background-size: 100% 100%;
+    }
+    87.5%{
+        background: url("zdjecia/c5.png");
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("zdjecia/c6.png");
+        background-size: 100% 100%;
+    }
 }
