@@ -40,3 +40,8 @@ let logo = document.getElementById("logo");
 logo.addEventListener("click", () => {
   window.location.href = "index.html";
 });
+
+function search() {
+  const inputSearch = document.querySelector(".search-input").value;
+  console.log(inputSearch);
+}
