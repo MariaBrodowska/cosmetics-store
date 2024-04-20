@@ -1,42 +1,42 @@
 let user = document.getElementById("user");
-function openUser(){
-    user.classList.add("open-user");
+function openUser() {
+  user.classList.add("open-user");
 }
-function closeUser(){
-    user.classList.remove("open-user");
+function closeUser() {
+  user.classList.remove("open-user");
 }
-function openRegister(){
-    location.replace("register-page.html");
+function openRegister() {
+  location.replace("../html/register-page.html");
 }
-function closeRegister(){
-    sessionStorage.setItem('openUser', 'true');
-    location.replace("index.html");
+function closeRegister() {
+  sessionStorage.setItem("openUser", "true");
+  location.replace("../index.html");
 }
-window.onload = function(){
-    if(sessionStorage.getItem('openUser')==='true'){
-        setTimeout(openUser,1000);
-        sessionStorage.removeItem('openUser');
-    }
-}
-let dymek = document.getElementById('dymek');
-let character = document.getElementById('character');
-character.addEventListener('mouseenter', () => {
-    dymek.style.visibility = 'visible';
+window.onload = function () {
+  if (sessionStorage.getItem("openUser") === "true") {
+    setTimeout(openUser, 1000);
+    sessionStorage.removeItem("openUser");
+  }
+};
+let dymek = document.getElementById("dymek");
+let character = document.getElementById("character");
+character.addEventListener("mouseenter", () => {
+  dymek.style.visibility = "visible";
 });
-character.addEventListener('mouseleave', () => {
-    dymek.style.visibility = 'hidden';
+character.addEventListener("mouseleave", () => {
+  dymek.style.visibility = "hidden";
 });
-character.addEventListener('click', () => {
-    window.location.href = "kontakt.html";
+character.addEventListener("click", () => {
+  window.location.href = "../html/kontakt.html";
 });
-let koszyk = document.getElementById('koszyk');
-koszyk.addEventListener('click', () => {
-    window.location.href = "koszyk.html";
+let koszyk = document.getElementById("koszyk");
+koszyk.addEventListener("click", () => {
+  window.location.href = "../html/koszyk.html";
 });
-function closeKoszyk(){
-    location.replace("index.html");
+function closeKoszyk() {
+  location.replace("../index.html");
 }
-let logo = document.getElementById('logo');
-logo.addEventListener('click', () => {
-    window.location.href = "index.html";
+let logo = document.getElementById("logo");
+logo.addEventListener("click", () => {
+  window.location.href = "../index.html";
 });
