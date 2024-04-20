@@ -6,7 +6,7 @@ function closeUser() {
   user.classList.remove("open-user");
 }
 function openRegister() {
-  location.replace("html/register-page.html");
+  location.replace("register-page.html");
 }
 function closeRegister() {
   sessionStorage.setItem("openUser", "true");
@@ -27,11 +27,11 @@ character.addEventListener("mouseleave", () => {
   dymek.style.visibility = "hidden";
 });
 character.addEventListener("click", () => {
-  window.location.href = "html/kontakt.html";
+  window.location.href = "kontakt.html";
 });
 let koszyk = document.getElementById("koszyk");
 koszyk.addEventListener("click", () => {
-  window.location.href = "html/koszyk.html";
+  window.location.href = "koszyk.html";
 });
 function closeKoszyk() {
   location.replace("index.html");

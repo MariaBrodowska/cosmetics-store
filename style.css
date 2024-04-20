@@ -83,8 +83,6 @@ nav {
 #nav2 li {
   margin-right: 10px;
   transition: all 0.3s;
-  /*     
-    border-right: 1px solid black; */
 }
 #nav2 li a {
   transition: all 0.3s;
@@ -101,7 +99,6 @@ nav {
   display: none;
 }
 #nav2 ul li {
-  /* border-bottom: 1px solid black; */
   text-decoration: none;
   list-style-type: none;
   text-align: center;
@@ -123,9 +120,6 @@ nav {
 #nav2 ul li:hover::before {
   width: 100%;
 }
-/* #nav2 ul li:hover{
-    border-bottom: 2px solid rgb(118, 179, 27);
-} */
 #nav2 li:hover ul {
   display: block;
   position: absolute;
@@ -178,7 +172,6 @@ header {
 @keyframes slideInLeft {
   from {
     transform: translateX(-700px);
-    /* transform: translateY(-300px); */
   }
   to {
     transform: translateX(0);
@@ -205,15 +198,13 @@ header {
 }
 #baner1 {
   grid-column: 1 / 3;
-  background: url("../zdjecia/tlo123.png");
+  background: url("zdjecia/tlo123.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   animation: slideInLeft 1.3s cubic-bezier(0.19, 1, 0.22, 1);
-  /* }cubic-bezier(0.19,1,0.22,1) */
-  /* cubic-bezier(.26,1.02,1,-0.62) */
 }
 #baner3 {
   grid-area: 1 / 3 / 3;
@@ -227,7 +218,7 @@ header {
 #baner4 {
   grid-area: 2 / 2;
   animation: slideInRight 1s cubic-bezier(0.19, 1, 0.22, 1);
-  background: url("../zdjecia/tlo5.jpg");
+  background: url("zdjecia/tlo5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -284,7 +275,6 @@ h2 {
   font-weight: bold;
   transition: all 0.3s;
 }
-/* rgb(158, 206, 85); */
 .dolacz:hover {
   transform: translateY(-10px);
   background-color: rgb(142, 185, 77);
@@ -331,7 +321,6 @@ h2 {
 }
 .przycisk {
   align-self: center;
-  /* background-color: rgb(142, 185, 77); */
   background-color: rgb(234, 255, 204);
   border: 2px solid rgb(127, 165, 69);
   color: rgb(127, 165, 69);
@@ -341,7 +330,6 @@ h2 {
   font-weight: bold;
   transition: all 0.3s;
 }
-/* rgb(155, 202, 85); */
 .przycisk:hover {
   background-color: rgb(127, 165, 69);
   color: white;
@@ -390,7 +378,7 @@ input[type="checkbox"]:focus-within {
   text-decoration: none;
   width: 80px;
   height: 110px;
-  background: url("../zdjecia/c1.png");
+  background: url("zdjecia/c1.png");
   background-size: 100% 100%;
   animation: change 9s infinite;
   align-self: flex-end;
@@ -450,39 +438,39 @@ input[type="checkbox"]:focus-within {
 }
 @keyframes change {
   0% {
-    background: url("../zdjecia/c1.png");
+    background: url("zdjecia/c1.png");
     background-size: 100% 100%;
   }
   12.5% {
-    background: url("../zdjecia/c2.png");
+    background: url("zdjecia/c2.png");
     background-size: 100% 100%;
   }
   25% {
-    background: url("../zdjecia/c3.png");
+    background: url("zdjecia/c3.png");
     background-size: 100% 100%;
   }
   37.5% {
-    background: url("../zdjecia/c4.png");
+    background: url("zdjecia/c4.png");
     background-size: 100% 100%;
   }
   50% {
-    background: url("../zdjecia/c10.png");
+    background: url("zdjecia/c10.png");
     background-size: 100% 100%;
   }
   62.5% {
-    background: url("../zdjecia/c3.png");
+    background: url("zdjecia/c3.png");
     background-size: 100% 100%;
   }
   75% {
-    background: url("../zdjecia/c4.png");
+    background: url("zdjecia/c4.png");
     background-size: 100% 100%;
   }
   87.5% {
-    background: url("../zdjecia/c5.png");
+    background: url("zdjecia/c5.png");
     background-size: 100% 100%;
   }
   100% {
-    background: url("../zdjecia/c6.png");
+    background: url("zdjecia/c6.png");
     background-size: 100% 100%;
   }
 }
