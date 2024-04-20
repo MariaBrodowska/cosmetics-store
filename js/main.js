@@ -36,3 +36,7 @@ koszyk.addEventListener('click', () => {
 function closeKoszyk(){
     location.replace("index.html");
 }
+let logo = document.getElementById('logo');
+logo.addEventListener('click', () => {
+    window.location.href = "index.html";
+});

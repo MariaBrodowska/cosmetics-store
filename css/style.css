@@ -482,3 +482,6 @@ input[type=checkbox]:focus-within{
         background-size: 100% 100%;
     }
 }
+#logo header,#cosmetics :hover{
+    cursor: pointer;
+}
