@@ -6,11 +6,11 @@ function closeUser() {
   user.classList.remove("open-user");
 }
 function openRegister() {
-  location.replace("../html/register-page.html");
+  location.replace("html/register-page.html");
 }
 function closeRegister() {
   sessionStorage.setItem("openUser", "true");
-  location.replace("../index.html");
+  location.replace("index.html");
 }
 window.onload = function () {
   if (sessionStorage.getItem("openUser") === "true") {
@@ -27,16 +27,16 @@ character.addEventListener("mouseleave", () => {
   dymek.style.visibility = "hidden";
 });
 character.addEventListener("click", () => {
-  window.location.href = "../html/kontakt.html";
+  window.location.href = "html/kontakt.html";
 });
 let koszyk = document.getElementById("koszyk");
 koszyk.addEventListener("click", () => {
-  window.location.href = "../html/koszyk.html";
+  window.location.href = "html/koszyk.html";
 });
 function closeKoszyk() {
-  location.replace("../index.html");
+  location.replace("index.html");
 }
 let logo = document.getElementById("logo");
 logo.addEventListener("click", () => {
-  window.location.href = "../index.html";
+  window.location.href = "index.html";
 });
