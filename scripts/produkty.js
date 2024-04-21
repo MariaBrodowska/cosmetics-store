@@ -27,8 +27,9 @@ function makeHtml(product) {
                     })"><br>
                 </div>`;
 }
+let productsHtml = "";
 function makeArray(products) {
-  let productsHtml = "";
+  productsHtml = "";
   products.forEach((product) => {
     productsHtml += makeHtml(product);
     arrayOfProducts.push(product);
@@ -36,15 +37,57 @@ function makeArray(products) {
   document.querySelector(".products").innerHTML = productsHtml;
 }
 
-let shoppingCard = [];
 function dodajDoKoszyka(id) {
-  arrayOfProducts.forEach((product) => {
-    if (product.id === id) shoppingCard.push(product);
-  });
-  console.log(shoppingCard);
+  let shoppingCard = [];
+  if (sessionStorage.getItem("jsonCard")) {
+    shoppingCard = JSON.parse(sessionStorage.getItem("jsonCard"));
+  }
+  let obj;
+  const wKoszyku = shoppingCard.find((item) => item.id === id);
+  if (wKoszyku) {
+    wKoszyku.quantity++;
+  } else {
+    arrayOfProducts.forEach((product) => {
+      if (product.id === id) {
+        obj = {
+          ...product,
+          quantity: 1,
+        };
+        shoppingCard.push(obj);
+      }
+    });
+  }
+  sessionStorage.setItem("jsonCard", JSON.stringify(shoppingCard));
+  console.log(sessionStorage.getItem("jsonCard"));
 }
 
-let productsHtml = "";
+function openKoszyk() {
+  let shoppingCard = JSON.parse(sessionStorage.getItem("jsonCard"));
+  productsHtml = "";
+  shoppingCard.forEach((product) => {
+    productsHtml += `<li><div class="product-container">
+                    <div class="product-image">
+                          <img class="image" src="${product.image}">
+                    </div>
+                    <div class="product-name">
+                          ${product.name}
+                    </div>
+                    <div class="product-price">
+                          ${(product.price / 100).toFixed(2)} zł
+                    </div>
+                    <div class="quantity">
+                          ilość: ${product.quantity}
+                    </div>
+                </div></li>`;
+  });
+  document.querySelector(".koszyk-produkty").innerHTML = productsHtml;
+}
+let koszyk = document.getElementById("koszyk");
+koszyk.addEventListener("click", () => {
+  sessionStorage.setItem("openKoszyk", "true");
+  window.location.href = "koszyk.html";
+});
+
 function szukaj(cat) {
   let tekst = "";
   productsHtml = "";
@@ -72,7 +115,6 @@ function szukaj(cat) {
     productsHtml +
     `</div>`;
 }
-
 window.onload = function () {
   if (sessionStorage.getItem("szukaj") == "true") {
     let cat = sessionStorage.getItem("cat");
@@ -80,17 +122,19 @@ window.onload = function () {
     sessionStorage.removeItem("szukaj");
     sessionStorage.removeItem("cat");
   }
+  if (sessionStorage.getItem("openKoszyk") === "true") {
+    setTimeout(openKoszyk, 1000);
+    sessionStorage.removeItem("openKoszyk");
+  }
 };
-
 function search() {
   productsHtml = "";
-  const inputSearch = document.querySelector(".search-input").value;
+  let inputSearch = document.querySelector(".search-input").value;
   arrayOfProducts.forEach((product) => {
     if (product.name.includes(inputSearch)) {
       productsHtml += makeHtml(product);
     }
   });
-  console.log(inputSearch);
   document.querySelector(".tresc").innerHTML =
     `<div class="wyniki-wyszukiwania">Wyniki dla: ${inputSearch}</div><div class="products">` +
     productsHtml +

@@ -87,3 +87,12 @@ h3 {
 .products {
   visibility: hidden;
 }
+.search {
+  visibility: hidden;
+}
+.koszyk-produkty {
+  width: 100px;
+  heigh: 50px;
+}
+.koszyk-produkty li {
+}

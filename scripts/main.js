@@ -29,10 +29,11 @@ character.addEventListener("mouseleave", () => {
 character.addEventListener("click", () => {
   window.location.href = "kontakt.html";
 });
-let koszyk = document.getElementById("koszyk");
-koszyk.addEventListener("click", () => {
-  window.location.href = "koszyk.html";
-});
+// let koszyk = document.getElementById("koszyk");
+// koszyk.addEventListener("click", () => {
+//   sessionStorage.setItem("openKoszyk", "true");
+//   window.location.href = "koszyk.html";
+// });
 function closeKoszyk() {
   location.replace("index.html");
 }
