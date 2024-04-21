@@ -2,7 +2,7 @@
   {
     "id": 12300001,
     "category": "twarz",
-    "subcategory": "oid",
+    "subcategory": "twarz-oid",
     "image": "../data/images/twarz/oid.png",
     "name": "CeraVe, oczyszczający żel do mycia z ceramidami dla skóry normalnej i tłustej,  236 ml",
     "ratingStars": "../data/images/stars/4.png",
@@ -12,7 +12,7 @@
   {
     "id": 12300002,
     "category": "twarz",
-    "subcategory": "oid",
+    "subcategory": "twarz-oid",
     "image": "../data/images/twarz/oid2.png",
     "name": "Ziaja Med, płyn micelarny do demakijażu 200ml",
     "ratingStars": "../data/images/stars/5.png",
@@ -22,7 +22,7 @@
   {
     "id": 12300003,
     "category": "twarz",
-    "subcategory": "oid",
+    "subcategory": "twarz-oid",
     "image": "../data/images/twarz/oid3.png",
     "name": "Mixa, dwufazowy płyn do demakijażu 125ml",
     "ratingStars": "../data/images/stars/5.png",
@@ -32,11 +32,61 @@
   {
     "id": 12300004,
     "category": "twarz",
-    "subcategory": "oid",
+    "subcategory": "twarz-oid",
     "image": "../data/images/twarz/oid4.png",
     "name": "Mixa, oczyszczający żel myjący do twarzy przeciw niedoskonałościom 200 ml",
     "ratingStars": "../data/images/stars/3.png",
     "rating": 31,
     "price": "2699"
+  },
+  {
+    "id": 12300005,
+    "category": "twarz",
+    "subcategory": "twarz-pt",
+    "image": "../data/images/twarz/pt.png",
+    "name": "Holika Holika, aloe soothinf essence - pielęgnacja na codzień 100 ml",
+    "ratingStars": "../data/images/stars/4.png",
+    "rating": 14,
+    "price": "15900"
+  },
+  {
+    "id": 12300006,
+    "category": "twarz",
+    "subcategory": "twarz-pt",
+    "image": "../data/images/twarz/pt2.png",
+    "name": "Cerave, nawilżający krem do twarzy 52 ml",
+    "ratingStars": "../data/images/stars/5.png",
+    "rating": 77,
+    "price": "4533"
+  },
+  {
+    "id": 12300007,
+    "category": "twarz",
+    "subcategory": "twarz-pu",
+    "image": "../data/images/twarz/pu.png",
+    "name": "Regenerum, regeneracyjne serum do ust w sztyfcie z SPF 50+ 5 g",
+    "ratingStars": "../data/images/stars/4.png",
+    "rating": 12,
+    "price": "1438"
+  },
+  {
+    "id": 12300008,
+    "category": "twarz",
+    "subcategory": "twarz-pu",
+    "image": "../data/images/twarz/pu2.png",
+    "name": "Mokosh, balsam do ust malina 15 ml",
+    "ratingStars": "../data/images/stars/4.png",
+    "rating": 4,
+    "price": "3164"
+  },
+  {
+    "id": 12300009,
+    "category": "makijaz",
+    "subcategory": "makijaz-t",
+    "image": "../data/images/makijaz/t.png",
+    "name": "Mokosh, balsam do ust malina 15 ml",
+    "ratingStars": "../data/images/stars/4.png",
+    "rating": 13,
+    "price": "3164"
   }
 ]

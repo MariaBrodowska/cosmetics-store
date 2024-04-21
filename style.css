@@ -60,6 +60,7 @@ nav {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  cursor: pointer;
 }
 #avatar {
   background-color: transparent;
@@ -521,11 +522,10 @@ input[type="checkbox"]:focus-within {
 .product-image img {
   width: 130px;
   padding: 10px;
-  transition: width 0.6s;
+  transition: transform 1s ease;
 }
 .product-image img:hover {
-  width: 137px;
-  cursor: pointer;
+  transform: scale(1.1);
 }
 .product-stars {
   display: flex;
@@ -562,3 +562,11 @@ input[type="checkbox"]:focus-within {
 /* .product-container .przycisk:hover {
   background-color: rgb(95, 128, 46);
 } */
+.wyniki-wyszukiwania {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 10px;
+  padding-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -20,7 +20,7 @@
             <form>
                 <div class="search">
                     <input class="search-input" type="search" placeholder="Szukaj">
-                    <div class="search-icon material-symbols-outlined"></div>
+                    <div class="search-icon material-symbols-outlined" onclick="search()">search</div>
                 </div>
             </form>
             <li><button id="avatar" type="submit" onclick="openUser()"><img src="zdjecia/avatar.png"></button></li>
@@ -28,57 +28,56 @@
         </ul>
         <ul id="nav2">
             <li><a href="index.html">STRONA GŁÓWNA</a></li>
-            <li><a href="">TWARZ</a>
+            <li><a onclick="szukaj('twarz')">TWARZ</a>
             <ul>
-                <li><a href="">Oczyszczanie i demakijaż</a></li>
-                <li><a href="">Pielęgnacja twarzy</a></li>
-                <li><a href="">Pielęgnacja ust</a></li>
+                <li><a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a></li>
+                <li><a onclick="szukaj('twarz-pt')">Pielęgnacja twarzy</a></li>
+                <li><a  onclick="szukaj('twarz-pu')">Pielęgnacja ust</a></li>
             </ul>
             </li>
-            <li><a href="">MAKIJAŻ</a>
+            <li><a onclick="szukaj('makijaz')">MAKIJAŻ</a>
             <ul>
-                <li><a href="">Twarz</a></li>
-                <li><a href="">Oczy</a></li>
-                <li><a href="">Brwi</a></li>
-                <li><a href="">Usta</a></li>
-                <li><a href="">Akcesoria do makijażu</a></li>
+                <li><a onclick="szukaj('makijaz-t')">Twarz</a></li>
+                <li><a onclick="szukaj('malijaz-o')">Oczy</a></li>
+                <li><a onclick="szukaj('makijaz-b')">Brwi</a></li>
+                <li><a onclick="szukaj('makijaz-u')">Usta</a></li>
+                <li><a onclick="szukaj('makijaz-a')">Akcesoria do makijażu</a></li>
             </ul>
             </li>
-            <li><a href="">PAZNOKCIE</a>
+            <li><a onclick="szukaj('paznokcie')">PAZNOKCIE</a>
             <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Manicure hybrydowy i żelowy</a></li>
-                <li><a href="">Manicure klasyczny</a></li>
-                <li><a href="">Akcesoria do paznokci</a></li>
+                <li><a onclick="szukaj('paznok-p')">Pielęgnacja</a></li>
+                <li><a onclick="szukaj('paznok-mh')">Manicure hybrydowy i żelowy</a></li>
+                <li><a onclick="szukaj('paznok-mk')">Manicure klasyczny</a></li>
+                <li><a onclick="szukaj('paznok-a')">Akcesoria do paznokci</a></li>
             </ul>
             </li>
-            <li><a href="">WŁOSY</a>
+            <li><a onclick="szukaj('wlosy')">WŁOSY</a>
             <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Koloryzacja</a></li>
-                <li><a href="">Stylizacja</a></li>
-                <li><a href="">Akcesoria do włosów</a></li>
+                <li><a onclick="szukaj('wlosy-p')">Pielęgnacja</a></li>
+                <li><a onclick="szukaj('wlosy-k')">Koloryzacja</a></li>
+                <li><a onclick="szukaj('wlosy-s')">Stylizacja</a></li>
+                <li><a onclick="szukaj('wlosy-a')">Akcesoria do włosów</a></li>
             </ul>   
             </li>
-            <li><a href="">CIAŁO</a>
+            <li><a onclick="szukaj('cialo')">CIAŁO</a>
             <ul>
-                <li><a href="">Pielęgnacja ciała</a></li>
-                <li><a href="">Pielęgnacja dłoni</a></li>
-                <li><a href="">Pielęgnacja Stóp</a></li>
+                <li><a onclick="szukaj('cialo-pc')">Pielęgnacja ciała</a></li>
+                <li><a onclick="szukaj('cialo-pd')">Pielęgnacja dłoni</a></li>
+                <li><a onclick="szukaj('cialo-ps')">Pielęgnacja Stóp</a></li>
             </ul>
             </li>
-            <li><a href="">ZAPACHY</a>
+            <li><a onclick="szukaj('ZAPACHY')">ZAPACHY</a>
             <ul>
-                <li><a href="">Perfumy damskie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
+                <li><a onclick="szukaj('zapachy-d')">Perfumy damskie</a></li>
+                <li><a onclick="szukaj('zapachy-m')">Perfumy męskie</a></li>
             </ul>
             </li>
-            <li><a href="">DLA NIEGO</a>
+            <li><a onclick="szukaj('niego')">DLA NIEGO</a>
             <ul>
-                <li><a href="">Twarz i ciało</a></li>
-                <li><a href="">Włosy</a></li>
-                <li><a href="">Golenie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
+                <li><a onclick="szukaj('niego-t')">Twarz i ciało</a></li>
+                <li><a onclick="szukaj('niego-w')">Włosy</a></li>
+                <li><a onclick="szukaj('niego-g')">Golenie</a></li>
             </ul>
             </li>
             <li><a href="">O NAS</a></li>
@@ -86,32 +85,32 @@
         </ul>
     </nav>
     <button type="button" onclick="closeKoszyk()" id="return"><img src="zdjecia/return.png"></button>
-    <main>
-        <section class="user" id="user">
-            <div class="logowanie">
-                <h3>Mam już konto</h3>
-                <label>Adres e-mail*</label><br><input type="text"><br>
-                <label>Hasło*</label><br><input type="password"><br>
-                <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
-                <input type="submit" value="ZALOGUJ SIĘ" class="przycisk"><br>
-                <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
-            </div>
-            <div class="rejestracja">
-                <button class="close" type="button" onclick="closeUser()"><img src="zdjecia/cross.png"></button>
-                <h3>Nie masz konta?<br>Załóż konto</h3>
-                <ul>
-                    <li>Sprawdzaj stan zamówienia</li>
-                    <li>Twórz listę życzeń</li>
-                    <li>Personalizowanie oferty</li>
-                    <li>...i więcej!</li>
-                </ul><br>
-                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="register-page.html"><br>
-            </div>
-        </section>
+    <section class="user" id="user">
+        <div class="logowanie">
+            <h3>Mam już konto</h3>
+            <label>Adres e-mail*</label><br><input type="text"><br>
+            <label>Hasło*</label><br><input type="password"><br>
+            <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
+            <input type="submit" value="ZALOGUJ SIĘ" class="przycisk"><br>
+            <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
+        </div>
+        <div class="rejestracja">
+            <button class="close" type="button" onclick="closeUser()"><img src="zdjecia/cross.png"></button>
+            <h3>Nie masz konta?<br>Załóż konto</h3>
+            <ul>
+                <li>Sprawdzaj stan zamówienia</li>
+                <li>Twórz listę życzeń</li>
+                <li>Personalizowanie oferty</li>
+                <li>...i więcej!</li>
+            </ul><br>
+            <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="register-page.html"><br>
+        </div>
+    </section>
+    <main class="tresc">
         <section id="lista">
             <div id="przedmioty">
                 <h3>TWÓJ KOSZYK (* PRODUKTY)</h3>
-                <ul>
+                <ul class="koszyk-produkty">
                     <li>cos tam</li>
                     <li>cos tam</li>
                 </ul>
@@ -133,5 +132,7 @@
     </main>
     <footer>&copy; 2024 MB</footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/produkty.js"></script>
+    <section class="products"></section>
 </body>
 </html>

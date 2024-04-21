@@ -27,64 +27,62 @@
         </ul>
         <ul id="nav2">
             <li><a href="index.html">STRONA GŁÓWNA</a></li>
-            <li><a href="">TWARZ</a>
+            <li><a onclick="szukaj('twarz')">TWARZ</a>
             <ul>
-                <li><a href="">Oczyszczanie i demakijaż</a></li>
-                <li><a href="">Pielęgnacja twarzy</a></li>
-                <li><a href="">Pielęgnacja ust</a></li>
+                <li><a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a></li>
+                <li><a onclick="szukaj('twarz-pt')">Pielęgnacja twarzy</a></li>
+                <li><a  onclick="szukaj('twarz-pu')">Pielęgnacja ust</a></li>
             </ul>
             </li>
-            <li><a href="">MAKIJAŻ</a>
+            <li><a onclick="szukaj('makijaz')">MAKIJAŻ</a>
             <ul>
-                <li><a href="">Twarz</a></li>
-                <li><a href="">Oczy</a></li>
-                <li><a href="">Brwi</a></li>
-                <li><a href="">Usta</a></li>
-                <li><a href="">Akcesoria do makijażu</a></li>
+                <li><a onclick="szukaj('makijaz-t')">Twarz</a></li>
+                <li><a onclick="szukaj('malijaz-o')">Oczy</a></li>
+                <li><a onclick="szukaj('makijaz-b')">Brwi</a></li>
+                <li><a onclick="szukaj('makijaz-u')">Usta</a></li>
+                <li><a onclick="szukaj('makijaz-a')">Akcesoria do makijażu</a></li>
             </ul>
             </li>
-            <li><a href="">PAZNOKCIE</a>
+            <li><a onclick="szukaj('paznokcie')">PAZNOKCIE</a>
             <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Manicure hybrydowy i żelowy</a></li>
-                <li><a href="">Manicure klasyczny</a></li>
-                <li><a href="">Akcesoria do paznokci</a></li>
+                <li><a onclick="szukaj('paznok-p')">Pielęgnacja</a></li>
+                <li><a onclick="szukaj('paznok-mh')">Manicure hybrydowy i żelowy</a></li>
+                <li><a onclick="szukaj('paznok-mk')">Manicure klasyczny</a></li>
+                <li><a onclick="szukaj('paznok-a')">Akcesoria do paznokci</a></li>
             </ul>
             </li>
-            <li><a href="">WŁOSY</a>
+            <li><a onclick="szukaj('wlosy')">WŁOSY</a>
             <ul>
-                <li><a href="">Pielęgnacja</a></li>
-                <li><a href="">Koloryzacja</a></li>
-                <li><a href="">Stylizacja</a></li>
-                <li><a href="">Akcesoria do włosów</a></li>
+                <li><a onclick="szukaj('wlosy-p')">Pielęgnacja</a></li>
+                <li><a onclick="szukaj('wlosy-k')">Koloryzacja</a></li>
+                <li><a onclick="szukaj('wlosy-s')">Stylizacja</a></li>
+                <li><a onclick="szukaj('wlosy-a')">Akcesoria do włosów</a></li>
             </ul>   
             </li>
-            <li><a href="">CIAŁO</a>
+            <li><a onclick="szukaj('cialo')">CIAŁO</a>
             <ul>
-                <li><a href="">Pielęgnacja ciała</a></li>
-                <li><a href="">Pielęgnacja dłoni</a></li>
-                <li><a href="">Pielęgnacja Stóp</a></li>
+                <li><a onclick="szukaj('cialo-pc')">Pielęgnacja ciała</a></li>
+                <li><a onclick="szukaj('cialo-pd')">Pielęgnacja dłoni</a></li>
+                <li><a onclick="szukaj('cialo-ps')">Pielęgnacja Stóp</a></li>
             </ul>
             </li>
-            <li><a href="">ZAPACHY</a>
+            <li><a onclick="szukaj('ZAPACHY')">ZAPACHY</a>
             <ul>
-                <li><a href="">Perfumy damskie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
+                <li><a onclick="szukaj('zapachy-d')">Perfumy damskie</a></li>
+                <li><a onclick="szukaj('zapachy-m')">Perfumy męskie</a></li>
             </ul>
             </li>
-            <li><a href="">DLA NIEGO</a>
+            <li><a onclick="szukaj('niego')">DLA NIEGO</a>
             <ul>
-                <li><a href="">Twarz i ciało</a></li>
-                <li><a href="">Włosy</a></li>
-                <li><a href="">Golenie</a></li>
-                <li><a href="">Perfumy męskie</a></li>
+                <li><a onclick="szukaj('niego-t')">Twarz i ciało</a></li>
+                <li><a onclick="szukaj('niego-w')">Włosy</a></li>
+                <li><a onclick="szukaj('niego-g')">Golenie</a></li>
             </ul>
             </li>
             <li><a href="">O NAS</a></li>
             <li><a href="">KONTAKT</a></li>
         </ul>
     </nav>
-    <main>
         <section class="user" id="user">
             <div class="logowanie">
                 <h3>Mam już konto</h3>
@@ -106,6 +104,7 @@
                 <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="register-page.html"><br>
             </div>
         </section>
+    <main class="tresc">
         <section>
             <div id="zdjecia">
             <div id="baner1">
