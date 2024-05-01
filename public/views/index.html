@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="style-koszyk.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
     <title>Kosmetyki ARIA - Kosmetyki online</title>
@@ -21,11 +20,11 @@
                 <input class="search-input" type="search" placeholder="Szukaj">
                 <div class="search-icon material-symbols-outlined" onclick="search()">search</div>
             </div>
-            <li><button id="avatar" type="submit" onclick="openUser()"><img src="zdjecia/avatar.png"></button></li>
-            <li><a id="koszyk"><img src="zdjecia/shop2.png"></a></li>
+            <li><button id="avatar" type="submit" onclick="openUser()"><img src="/zdjecia/avatar.png"></button></li>
+            <li><a id="koszyk"><img src="/zdjecia/shop2.png"></a></li>
         </ul>
         <ul id="nav2">
-            <li><a href="index.html">STRONA GŁÓWNA</a></li>
+            <li><a href="/">STRONA GŁÓWNA</a></li>
             <li><a onclick="szukaj('twarz')">TWARZ</a>
             <ul>
                 <li><a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a></li>
@@ -82,55 +81,63 @@
             <li><a href="">KONTAKT</a></li>
         </ul>
     </nav>
-    <button type="button" onclick="closeKoszyk()" id="return"><img src="zdjecia/return.png"></button>
-    <section class="user" id="user">
-        <div class="logowanie">
-            <h3>Mam już konto</h3>
-            <label>Adres e-mail*</label><br><input type="text"><br>
-            <label>Hasło*</label><br><input type="password"><br>
-            <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
-            <input type="submit" value="ZALOGUJ SIĘ" class="przycisk"><br>
-            <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
-        </div>
-        <div class="rejestracja">
-            <button class="close" type="button" onclick="closeUser()"><img src="zdjecia/cross.png"></button>
-            <h3>Nie masz konta?<br>Załóż konto</h3>
-            <ul>
-                <li>Sprawdzaj stan zamówienia</li>
-                <li>Twórz listę życzeń</li>
-                <li>Personalizowanie oferty</li>
-                <li>...i więcej!</li>
-            </ul><br>
-            <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="register-page.html"><br>
-        </div>
-    </section>
+        <section class="user" id="user">
+            <div class="logowanie">
+                <h3>Mam już konto</h3>
+                <label>Adres e-mail*</label><br><input type="text" class="emailLog"><br>
+                <label>Hasło*</label><br><input type="password" class="hasloLog"><br>
+                <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
+                <input type="submit" value="ZALOGUJ SIĘ" class="przycisk" onclick="zaloguj()"><br>
+                <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
+            </div>
+            <div class="rejestracja">
+                <button class="close" type="button" onclick="closeUser()"><img src="/zdjecia/cross.png"></button>
+                <h3>Nie masz konta?<br>Załóż konto</h3>
+                <ul>
+                    <li>Sprawdzaj stan zamówienia</li>
+                    <li>Twórz listę życzeń</li>
+                    <li>Personalizowanie oferty</li>
+                    <li>...i więcej!</li>
+                </ul><br>
+                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="/register-page"><br>
+            </div>
+        </section>
+        <dialog id="oknoLog">
+            <h2 id="tekstLog"></h2>
+            <div id="przycisk">
+            <button class="przycisk" id="oknoCloseLog">Ok</button>
+            </div>
+        </dialog>
     <main class="tresc">
-        <section id="lista">
-            <div id="przedmioty">
-                <h3>TWÓJ KOSZYK (* PRODUKTY)</h3>
-                <ul class="koszyk-produkty">
-                    <li>cos tam</li>
-                    <li>cos tam</li>
-                </ul>
+        <section>
+            <div id="zdjecia">
+            <div id="baner1">
+                <a href="">BESTSELLERY<br><span id="bs">ZOBACZ PRODUKTY</span></a>
             </div>
-            <div id="podsumowanie">
-                <h4>PODSUMOWANIE</h4>
-                <span>Wartość koszyka<div id="wartosc">...</div></span>
-                <span>Dostawa<div id="dostawa">od 0,00 zł</div></span>
-                <span>Zniżki<div id="znizki">...</div></span>
-                <div id="kreska"></div>
-                <span>Razem (z VAT)<div id="razem">...</div></span><br>
-                <input type="submit" value="PRZEJDŹ DO KASY" class="przycisk" onclick="" href=""><br>
+                <img id="baner2" src="/zdjecia/ph18.jpg">
+                <img id="baner3" src="/zdjecia/aloe2.png">
+                <div id="baner4"></div>
             </div>
+        </section>
+        <section class="products">
+            
+        </section>
+        <section id="opis">
+            <h2>Aria cosmetics</h2>
+            Zanurz się w naszym wyjątkowym sklepie, gdzie troszczymy się o Twoje piękno i zdrowie. Nasza misja to dostarczanie najwyższej jakości, naturalnych produktów kosmetycznych, które nie tylko pielęgnują Twoją skórę, ale również dbają o środowisko.
+            <br><br>W naszym asortymencie znajdziesz szeroki wybór kosmetyków, które powstały z pasją i z myślą o Twoich potrzebach. Oferujemy produkty renomowanych marek, których składniki pochodzą z natury, bez dodatku szkodliwych substancji chemicznych czy sztucznych aromatów. Nasze produkty są przyjazne dla skóry i zapewniają doskonałe rezultaty bez kompromisów.
+            <br><br>Dbamy nie tylko o Twoje piękno, ale także o środowisko naturalne. Dlatego większość naszych opakowań jest przyjazna dla recyklingu, a produkty są testowane bez użycia zwierząt.
+            <br><br>Zapraszamy do naszego sklepu, aby odkryć tajemnice naturalnej pielęgnacji i poczuć się pięknie od środka na zewnątrz. Dołącz do naszej społeczności, która stawia na zdrowie, piękno i odpowiedzialność.
+            <button class="dolacz" onclick="openRegister()" href="">Dołącz do nas!</button>
         </section>
         <div id="tlo">
             <div id="dymek">Masz pytania?<br>Skontaktuj się z nami!</div>
             <div id="character"></div>
         </div>
     </main>
-    <section class="products"></section>
     <footer>&copy; 2024 MB</footer>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/produkty.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/produkty.js"></script>
+    <script src="/scripts/logowanie.js"></script>
 </body>
 </html>

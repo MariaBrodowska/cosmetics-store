@@ -199,7 +199,7 @@ header {
 }
 #baner1 {
   grid-column: 1 / 3;
-  background: url("zdjecia/tlo123.png");
+  background: url("/zdjecia/tlo123.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -219,7 +219,7 @@ header {
 #baner4 {
   grid-area: 2 / 2;
   animation: slideInRight 1s cubic-bezier(0.19, 1, 0.22, 1);
-  background: url("zdjecia/tlo5.jpg");
+  background: url("/zdjecia/tlo5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -367,7 +367,8 @@ h3 {
 #zapamietaj {
   font-size: 14px;
 }
-#check {
+#check,
+#check1 {
   display: flex;
   align-items: center;
 }
@@ -379,7 +380,7 @@ input[type="checkbox"]:focus-within {
   text-decoration: none;
   width: 80px;
   height: 110px;
-  background: url("zdjecia/c1.png");
+  background: url("/zdjecia/c1.png");
   background-size: 100% 100%;
   animation: change 9s infinite;
   align-self: flex-end;
@@ -439,39 +440,39 @@ input[type="checkbox"]:focus-within {
 }
 @keyframes change {
   0% {
-    background: url("zdjecia/c1.png");
+    background: url("/zdjecia/c1.png");
     background-size: 100% 100%;
   }
   12.5% {
-    background: url("zdjecia/c2.png");
+    background: url("/zdjecia/c2.png");
     background-size: 100% 100%;
   }
   25% {
-    background: url("zdjecia/c3.png");
+    background: url("/zdjecia/c3.png");
     background-size: 100% 100%;
   }
   37.5% {
-    background: url("zdjecia/c4.png");
+    background: url("/zdjecia/c4.png");
     background-size: 100% 100%;
   }
   50% {
-    background: url("zdjecia/c10.png");
+    background: url("/zdjecia/c10.png");
     background-size: 100% 100%;
   }
   62.5% {
-    background: url("zdjecia/c3.png");
+    background: url("/zdjecia/c3.png");
     background-size: 100% 100%;
   }
   75% {
-    background: url("zdjecia/c4.png");
+    background: url("/zdjecia/c4.png");
     background-size: 100% 100%;
   }
   87.5% {
-    background: url("zdjecia/c5.png");
+    background: url("/zdjecia/c5.png");
     background-size: 100% 100%;
   }
   100% {
-    background: url("zdjecia/c6.png");
+    background: url("/zdjecia/c6.png");
     background-size: 100% 100%;
   }
 }
@@ -569,4 +570,20 @@ input[type="checkbox"]:focus-within {
   padding-top: 50px;
   font-weight: bold;
   text-transform: uppercase;
+}
+#tekstLog {
+  font-size: 18px;
+}
+#oknoLog {
+  padding: 20px;
+  border-radius: 10px;
+  border-style: dashed;
+}
+#oknoCloseLog {
+  text-align: center;
+  width: 80px;
+}
+#przycisk {
+  display: flex;
+  justify-content: center;
 }

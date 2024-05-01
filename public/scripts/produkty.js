@@ -1,7 +1,8 @@
-fetch("../data/products.json")
+fetch("/api/products", { method: "GET" })
   .then((response) => response.json())
   .then((data) => {
     makeArray(data);
+    //console.log(data);
   })
   .catch((error) => console.error(error));
 
@@ -27,6 +28,7 @@ function makeHtml(product) {
                     })"><br>
                 </div>`;
 }
+
 let productsHtml = "";
 function makeArray(products) {
   productsHtml = "";
@@ -58,7 +60,7 @@ function dodajDoKoszyka(id) {
     });
   }
   sessionStorage.setItem("jsonCard", JSON.stringify(shoppingCard));
-  console.log(sessionStorage.getItem("jsonCard"));
+  //console.log(sessionStorage.getItem("jsonCard"));
 }
 
 function openKoszyk() {
@@ -85,20 +87,20 @@ function openKoszyk() {
 let koszyk = document.getElementById("koszyk");
 koszyk.addEventListener("click", () => {
   sessionStorage.setItem("openKoszyk", "true");
-  window.location.href = "koszyk.html";
+  window.location.href = "/koszyk";
 });
 
 function szukaj(cat) {
   let tekst = "";
   productsHtml = "";
-  if (window.location.pathname.endsWith("koszyk.html")) {
+  if (window.location.pathname.endsWith("/koszyk")) {
     sessionStorage.setItem("szukaj", "true");
     sessionStorage.setItem("cat", cat);
     sessionStorage.setItem(
       "tekst",
       document.querySelector(`a[onclick="szukaj('${cat}')"`).textContent
     );
-    window.location.replace("index.html");
+    window.location.href = "/";
   } else if (!sessionStorage.getItem("tekst")) {
     tekst = sessionStorage.getItem("tekst");
     sessionStorage.removeItem("tekst");

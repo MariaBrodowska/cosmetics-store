@@ -22,7 +22,7 @@ main {
   align-items: center;
   flex-direction: column;
 }
-section {
+form {
   background-color: white;
   width: 400px;
   -webkit-box-shadow: 10px 10px 52px 0px rgba(64, 64, 64, 1);
@@ -37,7 +37,7 @@ section {
   margin-bottom: 20px;
   color: rgb(142, 185, 77);
 }
-section label {
+form label {
   font-size: 16px;
   color: black;
 }
@@ -58,4 +58,20 @@ body {
 }
 h3 {
   font-size: 33px;
+}
+#tekst {
+  font-size: 18px;
+}
+#okno {
+  padding: 20px;
+  border-radius: 10px;
+  border-style: dashed;
+}
+#oknoClose {
+  text-align: center;
+  width: 80px;
+}
+#przycisk {
+  display: flex;
+  justify-content: center;
 }
