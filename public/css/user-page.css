@@ -1,0 +1,196 @@
+#ukryty,
+.search {
+  display: none;
+}
+.dane {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  font-size: 17px;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.imie {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 5px;
+  padding-top: 30px;
+}
+.col1 span,
+.imie {
+  padding-left: 40px;
+}
+.kreska {
+  border-top: 2px solid rgb(118, 179, 27);
+  padding: 0;
+}
+.dane li:not(.kreska) {
+  margin-bottom: 10px;
+}
+ul {
+  margin-top: 30px;
+}
+#menuUser li:hover {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(118, 179, 27);
+}
+form h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(118, 179, 27);
+}
+form label {
+  font-size: 16px;
+  color: black;
+}
+input {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(187, 187, 187);
+  transition: all 0.25s;
+  outline: none;
+  background: transparent;
+  width: 300px;
+  margin-bottom: 10px;
+}
+input:focus-within {
+  background-color: #f9f9fb;
+  box-shadow: 0 0 5px rgb(142, 185, 77);
+}
+.przycisk {
+  margin: 0 45px;
+  margin-top: 10px;
+}
+#mojeDane,
+#mojeZamowienia {
+  display: none;
+}
+#mojeZamowienia {
+  width: 50%;
+}
+#tekstMod {
+  font-size: 18px;
+}
+#oknoMod {
+  padding: 20px;
+  border-radius: 10px;
+  border-style: dashed;
+}
+#oknoCloseMod {
+  text-align: center;
+  width: 80px;
+}
+#przycisk {
+  display: flex;
+  justify-content: center;
+}
+
+#nrZ {
+  color: rgb(165, 165, 165);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#razem {
+  font-size: 18px;
+  text-align: start;
+}
+#data {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: end;
+}
+#status {
+  color: rgb(6, 174, 6);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+#wszystkieZamowienia {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+#wszystkieZamowienia li {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+#dane1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#dane11,
+#dane12 {
+  margin-bottom: 10px;
+}
+#status img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+#produkty {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.produkt {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.produkt img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.product-name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price,
+.product-quantity {
+  font-size: 14px;
+  color: #555;
+}
+#dane2 {
+  text-align: start;
+  font-size: 16px;
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+#szczegoly {
+  margin-bottom: 6px;
+}
+@media (max-width: 624px) {
+  .dane {
+    flex-direction: column;
+  }
+  #mojeZamowienia {
+    width: 100%;
+  }
+  .col1 {
+    margin-left: -30px;
+  }
+}

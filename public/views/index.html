@@ -1,143 +1,302 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <title>Kosmetyki ARIA - Kosmetyki online</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-    <div id="logo">
-        <header>ARIA<br></header>
+      <div id="logo">
+        <header>ARIA<br /></header>
         <span id="cosmetics">cosmetics</span>
-    </div>
-    <nav>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <ul class="sidebar">
+        <li><a href="/">STRONA GŁÓWNA</a></li>
+        <li>
+          <a onclick="szukaj('twarz')">TWARZ</a>
+          <ul class="close">
+            <li>
+              <a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a>
+            </li>
+            <li><a onclick="szukaj('twarz-pt')">Pielęgnacja twarzy</a></li>
+            <li><a onclick="szukaj('twarz-pu')">Pielęgnacja ust</a></li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('makijaz')">MAKIJAŻ</a>
+          <ul class="close">
+            <li><a onclick="szukaj('makijaz-t')">Twarz</a></li>
+            <li><a onclick="szukaj('malijaz-o')">Oczy</a></li>
+            <li><a onclick="szukaj('makijaz-b')">Brwi</a></li>
+            <li><a onclick="szukaj('makijaz-u')">Usta</a></li>
+            <li>
+              <a onclick="szukaj('makijaz-a')">Akcesoria do makijażu</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('paznokcie')">PAZNOKCIE</a>
+          <ul class="close">
+            <li><a onclick="szukaj('paznok-p')">Pielęgnacja</a></li>
+            <li>
+              <a onclick="szukaj('paznok-mh')">Manicure hybrydowy i żelowy</a>
+            </li>
+            <li><a onclick="szukaj('paznok-mk')">Manicure klasyczny</a></li>
+            <li><a onclick="szukaj('paznok-a')">Akcesoria do paznokci</a></li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('wlosy')">WŁOSY</a>
+          <ul class="close">
+            <li><a onclick="szukaj('wlosy-p')">Pielęgnacja</a></li>
+            <li><a onclick="szukaj('wlosy-k')">Koloryzacja</a></li>
+            <li><a onclick="szukaj('wlosy-s')">Stylizacja</a></li>
+            <li><a onclick="szukaj('wlosy-a')">Akcesoria do włosów</a></li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('cialo')">CIAŁO</a>
+          <ul class="close">
+            <li><a onclick="szukaj('cialo-pc')">Pielęgnacja ciała</a></li>
+            <li><a onclick="szukaj('cialo-pd')">Pielęgnacja dłoni</a></li>
+            <li><a onclick="szukaj('cialo-ps')">Pielęgnacja Stóp</a></li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('ZAPACHY')">ZAPACHY</a>
+          <ul class="close">
+            <li><a onclick="szukaj('zapachy-d')">Perfumy damskie</a></li>
+            <li><a onclick="szukaj('zapachy-m')">Perfumy męskie</a></li>
+          </ul>
+        </li>
+        <li>
+          <a onclick="szukaj('niego')">DLA NIEGO</a>
+          <ul class="close">
+            <li><a onclick="szukaj('niego-t')">Twarz i ciało</a></li>
+            <li><a onclick="szukaj('niego-w')">Włosy</a></li>
+            <li><a onclick="szukaj('niego-g')">Golenie</a></li>
+          </ul>
+        </li>
+        <li><a onclick="scrollToSection('opis')">O NAS</a></li>
+        <li><a href="/kontakt" target="_blank">KONTAKT</a></li>
+      </ul>
+      <nav>
         <ul id="nav1">
-            <div class="search">
-                <input class="search-input" type="search" placeholder="Szukaj">
-                <div class="search-icon material-symbols-outlined" onclick="search()">search</div>
+          <li class="search">
+            <input class="search-input" type="search" placeholder="Szukaj" />
+            <div
+              class="search-icon material-symbols-outlined"
+              onclick="search()"
+            >
+              search
             </div>
-            <li><button id="avatar" type="submit" onclick="openUser()"><img src="/zdjecia/avatar.png"></button></li>
-            <li><a id="koszyk"><img src="/zdjecia/shop2.png"></a></li>
+          </li>
+          <li>
+            <button id="avatar" type="submit" onclick="openUser()">
+              <img src="/zdjecia/avatar.png" alt="user" />
+            </button>
+          </li>
+          <li>
+            <a id="koszyk"><img src="/zdjecia/shop2.png" alt="koszyk" /></a>
+          </li>
         </ul>
         <ul id="nav2">
-            <li><a href="/">STRONA GŁÓWNA</a></li>
-            <li><a onclick="szukaj('twarz')">TWARZ</a>
+          <li><a href="/">STRONA GŁÓWNA</a></li>
+          <li>
+            <a onclick="szukaj('twarz')">TWARZ</a>
             <ul>
-                <li><a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a></li>
-                <li><a onclick="szukaj('twarz-pt')">Pielęgnacja twarzy</a></li>
-                <li><a  onclick="szukaj('twarz-pu')">Pielęgnacja ust</a></li>
+              <li>
+                <a onclick="szukaj('twarz-oid')">Oczyszczanie i demakijaż</a>
+              </li>
+              <li><a onclick="szukaj('twarz-pt')">Pielęgnacja twarzy</a></li>
+              <li><a onclick="szukaj('twarz-pu')">Pielęgnacja ust</a></li>
             </ul>
-            </li>
-            <li><a onclick="szukaj('makijaz')">MAKIJAŻ</a>
+          </li>
+          <li>
+            <a onclick="szukaj('makijaz')">MAKIJAŻ</a>
             <ul>
-                <li><a onclick="szukaj('makijaz-t')">Twarz</a></li>
-                <li><a onclick="szukaj('malijaz-o')">Oczy</a></li>
-                <li><a onclick="szukaj('makijaz-b')">Brwi</a></li>
-                <li><a onclick="szukaj('makijaz-u')">Usta</a></li>
-                <li><a onclick="szukaj('makijaz-a')">Akcesoria do makijażu</a></li>
+              <li><a onclick="szukaj('makijaz-t')">Twarz</a></li>
+              <li><a onclick="szukaj('malijaz-o')">Oczy</a></li>
+              <li><a onclick="szukaj('makijaz-b')">Brwi</a></li>
+              <li><a onclick="szukaj('makijaz-u')">Usta</a></li>
+              <li>
+                <a onclick="szukaj('makijaz-a')">Akcesoria do makijażu</a>
+              </li>
             </ul>
-            </li>
-            <li><a onclick="szukaj('paznokcie')">PAZNOKCIE</a>
+          </li>
+          <li>
+            <a onclick="szukaj('paznokcie')">PAZNOKCIE</a>
             <ul>
-                <li><a onclick="szukaj('paznok-p')">Pielęgnacja</a></li>
-                <li><a onclick="szukaj('paznok-mh')">Manicure hybrydowy i żelowy</a></li>
-                <li><a onclick="szukaj('paznok-mk')">Manicure klasyczny</a></li>
-                <li><a onclick="szukaj('paznok-a')">Akcesoria do paznokci</a></li>
+              <li><a onclick="szukaj('paznok-p')">Pielęgnacja</a></li>
+              <li>
+                <a onclick="szukaj('paznok-mh')">Manicure hybrydowy i żelowy</a>
+              </li>
+              <li><a onclick="szukaj('paznok-mk')">Manicure klasyczny</a></li>
+              <li><a onclick="szukaj('paznok-a')">Akcesoria do paznokci</a></li>
             </ul>
-            </li>
-            <li><a onclick="szukaj('wlosy')">WŁOSY</a>
+          </li>
+          <li>
+            <a onclick="szukaj('wlosy')">WŁOSY</a>
             <ul>
-                <li><a onclick="szukaj('wlosy-p')">Pielęgnacja</a></li>
-                <li><a onclick="szukaj('wlosy-k')">Koloryzacja</a></li>
-                <li><a onclick="szukaj('wlosy-s')">Stylizacja</a></li>
-                <li><a onclick="szukaj('wlosy-a')">Akcesoria do włosów</a></li>
-            </ul>   
-            </li>
-            <li><a onclick="szukaj('cialo')">CIAŁO</a>
-            <ul>
-                <li><a onclick="szukaj('cialo-pc')">Pielęgnacja ciała</a></li>
-                <li><a onclick="szukaj('cialo-pd')">Pielęgnacja dłoni</a></li>
-                <li><a onclick="szukaj('cialo-ps')">Pielęgnacja Stóp</a></li>
+              <li><a onclick="szukaj('wlosy-p')">Pielęgnacja</a></li>
+              <li><a onclick="szukaj('wlosy-k')">Koloryzacja</a></li>
+              <li><a onclick="szukaj('wlosy-s')">Stylizacja</a></li>
+              <li><a onclick="szukaj('wlosy-a')">Akcesoria do włosów</a></li>
             </ul>
-            </li>
-            <li><a onclick="szukaj('ZAPACHY')">ZAPACHY</a>
+          </li>
+          <li>
+            <a onclick="szukaj('cialo')">CIAŁO</a>
             <ul>
-                <li><a onclick="szukaj('zapachy-d')">Perfumy damskie</a></li>
-                <li><a onclick="szukaj('zapachy-m')">Perfumy męskie</a></li>
+              <li><a onclick="szukaj('cialo-pc')">Pielęgnacja ciała</a></li>
+              <li><a onclick="szukaj('cialo-pd')">Pielęgnacja dłoni</a></li>
+              <li><a onclick="szukaj('cialo-ps')">Pielęgnacja Stóp</a></li>
             </ul>
-            </li>
-            <li><a onclick="szukaj('niego')">DLA NIEGO</a>
+          </li>
+          <li>
+            <a onclick="szukaj('ZAPACHY')">ZAPACHY</a>
             <ul>
-                <li><a onclick="szukaj('niego-t')">Twarz i ciało</a></li>
-                <li><a onclick="szukaj('niego-w')">Włosy</a></li>
-                <li><a onclick="szukaj('niego-g')">Golenie</a></li>
+              <li><a onclick="szukaj('zapachy-d')">Perfumy damskie</a></li>
+              <li><a onclick="szukaj('zapachy-m')">Perfumy męskie</a></li>
             </ul>
-            </li>
-            <li><a href="">O NAS</a></li>
-            <li><a href="">KONTAKT</a></li>
+          </li>
+          <li>
+            <a onclick="szukaj('niego')">DLA NIEGO</a>
+            <ul>
+              <li><a onclick="szukaj('niego-t')">Twarz i ciało</a></li>
+              <li><a onclick="szukaj('niego-w')">Włosy</a></li>
+              <li><a onclick="szukaj('niego-g')">Golenie</a></li>
+            </ul>
+          </li>
+          <li><a onclick="scrollToSection('opis')">O NAS</a></li>
+          <li><a href="/kontakt" target="_blank">KONTAKT</a></li>
         </ul>
-    </nav>
-        <section class="user" id="user">
-            <div class="logowanie">
-                <h3>Mam już konto</h3>
-                <label>Adres e-mail*</label><br><input type="text" class="emailLog"><br>
-                <label>Hasło*</label><br><input type="password" class="hasloLog"><br>
-                <div id="check"><input type="checkbox" name="zgoda" value="zgoda" id="zapamietaj">Zapamiętaj mnie</div><br>
-                <input type="submit" value="ZALOGUJ SIĘ" class="przycisk" onclick="zaloguj()"><br>
-                <a id="przypomnienie" href="">NIE PAMIĘTAM HASŁA</a>
-            </div>
-            <div class="rejestracja">
-                <button class="close" type="button" onclick="closeUser()"><img src="/zdjecia/cross.png"></button>
-                <h3>Nie masz konta?<br>Załóż konto</h3>
-                <ul>
-                    <li>Sprawdzaj stan zamówienia</li>
-                    <li>Twórz listę życzeń</li>
-                    <li>Personalizowanie oferty</li>
-                    <li>...i więcej!</li>
-                </ul><br>
-                <input type="submit" value="ZAŁÓŻ KONTO" class="przycisk" onclick="openRegister()" href="/register-page"><br>
-            </div>
-        </section>
-        <dialog id="oknoLog">
-            <h2 id="tekstLog"></h2>
-            <div id="przycisk">
-            <button class="przycisk" id="oknoCloseLog">Ok</button>
-            </div>
-        </dialog>
-    <main class="tresc">
+      </nav>
+      <section class="user" id="user">
+        <div class="logowanie">
+          <h3>Mam już konto</h3>
+          <label>Adres e-mail*</label><br /><input
+            type="text"
+            class="emailLog"
+          /><br />
+          <label>Hasło*</label><br /><input
+            type="password"
+            class="hasloLog"
+          /><br />
+          <br />
+          <input
+            type="submit"
+            value="ZALOGUJ SIĘ"
+            class="przycisk"
+            onclick="zaloguj()"
+          /><br />
+        </div>
+        <div class="rejestracja">
+          <button class="close" type="button" onclick="closeUser()">
+            <img src="/zdjecia/cross.png" alt="zamknij" />
+          </button>
+          <h3>Nie masz konta?<br />Załóż konto</h3>
+          <ul>
+            <li>Sprawdzaj stan zamówienia</li>
+            <li>Twórz listę życzeń</li>
+            <li>Personalizowanie oferty</li>
+            <li>...i więcej!</li>
+          </ul>
+          <br />
+          <input
+            type="submit"
+            value="ZAŁÓŻ KONTO"
+            class="przycisk"
+            onclick="openRegister()"
+          /><br />
+        </div>
+      </section>
+      <dialog id="oknoLog">
+        <h2 id="tekstLog"></h2>
+        <div id="przycisk">
+          <button class="przycisk" id="oknoCloseLog">Ok</button>
+        </div>
+      </dialog>
+      <dialog id="oknoDodano">
+        <h2 id="tekstDodano1">Dodano do koszyka:</h2>
+        <h2 id="tekstDodano"></h2>
+        <div id="przycisk2">
+          <button
+            class="przycisk"
+            id="oknoCloseDodano"
+            onclick="oknoDodano.close()"
+          >
+            Ok
+          </button>
+          <button
+            class="przycisk"
+            id="oknoCloseDoKoszyka"
+            onclick="koszyk.click(); oknoDodano.close();"
+          >
+            PRZEJDŹ DO KOSZYKA
+          </button>
+        </div>
+      </dialog>
+      <main class="tresc">
         <section>
-            <div id="zdjecia">
+          <div id="zdjecia">
             <div id="baner1">
-                <a href="">BESTSELLERY<br><span id="bs">ZOBACZ PRODUKTY</span></a>
+              <a onclick="scrollToSection('productsSection')"
+                >BESTSELLERY<br /><span id="bs">ZOBACZ PRODUKTY</span></a
+              >
             </div>
-                <img id="baner2" src="/zdjecia/ph18.jpg">
-                <img id="baner3" src="/zdjecia/aloe2.png">
-                <div id="baner4"></div>
-            </div>
+            <img id="baner2" src="/zdjecia/ph18.jpg" alt="baner2" />
+            <img id="baner3" src="/zdjecia/aloe2.png" alt="baner3" />
+            <div id="baner4"></div>
+          </div>
         </section>
-        <section class="products">
-            
-        </section>
+        <section class="products" id="productsSection"></section>
+        <div class="dostawa"></div>
         <section id="opis">
-            <h2>Aria cosmetics</h2>
-            Zanurz się w naszym wyjątkowym sklepie, gdzie troszczymy się o Twoje piękno i zdrowie. Nasza misja to dostarczanie najwyższej jakości, naturalnych produktów kosmetycznych, które nie tylko pielęgnują Twoją skórę, ale również dbają o środowisko.
-            <br><br>W naszym asortymencie znajdziesz szeroki wybór kosmetyków, które powstały z pasją i z myślą o Twoich potrzebach. Oferujemy produkty renomowanych marek, których składniki pochodzą z natury, bez dodatku szkodliwych substancji chemicznych czy sztucznych aromatów. Nasze produkty są przyjazne dla skóry i zapewniają doskonałe rezultaty bez kompromisów.
-            <br><br>Dbamy nie tylko o Twoje piękno, ale także o środowisko naturalne. Dlatego większość naszych opakowań jest przyjazna dla recyklingu, a produkty są testowane bez użycia zwierząt.
-            <br><br>Zapraszamy do naszego sklepu, aby odkryć tajemnice naturalnej pielęgnacji i poczuć się pięknie od środka na zewnątrz. Dołącz do naszej społeczności, która stawia na zdrowie, piękno i odpowiedzialność.
-            <button class="dolacz" onclick="openRegister()" href="">Dołącz do nas!</button>
+          <h2>Aria cosmetics</h2>
+          Zanurz się w naszym wyjątkowym sklepie, gdzie troszczymy się o Twoje
+          piękno i zdrowie. Nasza misja to dostarczanie najwyższej jakości,
+          naturalnych produktów kosmetycznych, które nie tylko pielęgnują Twoją
+          skórę, ale również dbają o środowisko.
+          <br /><br />W naszym asortymencie znajdziesz szeroki wybór kosmetyków,
+          które powstały z pasją i z myślą o Twoich potrzebach. Oferujemy
+          produkty renomowanych marek, których składniki pochodzą z natury, bez
+          dodatku szkodliwych substancji chemicznych czy sztucznych aromatów.
+          Nasze produkty są przyjazne dla skóry i zapewniają doskonałe rezultaty
+          bez kompromisów. <br /><br />Dbamy nie tylko o Twoje piękno, ale także
+          o środowisko naturalne. Dlatego większość naszych opakowań jest
+          przyjazna dla recyklingu, a produkty są testowane bez użycia zwierząt.
+          <br /><br />Zapraszamy do naszego sklepu, aby odkryć tajemnice
+          naturalnej pielęgnacji i poczuć się pięknie od środka na zewnątrz.
+          Dołącz do naszej społeczności, która stawia na zdrowie, piękno i
+          odpowiedzialność.
+          <button class="dolacz" onclick="openRegister()">
+            Dołącz do nas!
+          </button>
         </section>
         <div id="tlo">
-            <div id="dymek">Masz pytania?<br>Skontaktuj się z nami!</div>
-            <div id="character"></div>
+          <div id="dymek">Masz pytania?<br />Skontaktuj się z nami!</div>
+          <div id="character"></div>
         </div>
-    </main>
-    <footer>&copy; 2024 MB</footer>
+      </main>
+      <footer>&copy; 2024 MB</footer>
+    </div>
     <script src="/scripts/main.js"></script>
     <script src="/scripts/produkty.js"></script>
     <script src="/scripts/logowanie.js"></script>
-</body>
+  </body>
 </html>

@@ -24,28 +24,52 @@ main {
   display: flex;
   justify-content: center;
 }
+.product-image img {
+  height: 160px;
+  width: 100px;
+}
+.tresc .przycisk {
+  width: 100px;
+  font-weight: bold;
+}
 #lista {
   background-color: white;
-  width: 900px;
+  width: 1000px;
   -webkit-box-shadow: 10px 10px 52px 0px rgba(64, 64, 64, 1);
   -moz-box-shadow: 10px 10px 52px 0px rgba(64, 64, 64, 1);
   box-shadow: 10px 10px 52px 0px rgba(64, 64, 64, 1);
-  border-radius: 7px;
-  display: flex;
+  border-radius: 10px;
+  display: grid;
   background-color: #f9f9fb;
-  margin-top: 15px;
-  margin-bottom: 40px;
+  grid-template-columns: 60% 30%;
+  gap: 10px;
+  margin: 0;
+  padding: 20px;
+  padding-right: 0;
 }
 #podsumowanie {
   display: flex;
   flex-direction: column;
   background-color: white;
   border: 2px solid rgb(221, 221, 221);
-  margin: 40px 30px;
-  width: 80%;
-  padding-left: 15px;
   font-size: 17px;
   border-radius: 15px;
+  padding: 0 20px;
+  margin-top: 150px;
+  height: 350px;
+  width: 100%;
+}
+#podsumowanie .przycisk {
+  width: 200px;
+}
+#przedmioty {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#dane {
+  margin-bottom: 0;
+  padding: 20px;
 }
 span {
   display: flex;
@@ -58,7 +82,6 @@ h4 {
 }
 #podsumowanie div {
   font-weight: bold;
-  margin-right: 15px;
 }
 #kreska {
   border-bottom: 3px solid rgb(131, 189, 45);
@@ -68,21 +91,18 @@ h4 {
   align-self: center;
 }
 h3 {
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-size: 27px;
+  font-size: 25px;
 }
 #lista ul li {
   background-color: white;
   border: 2px solid rgb(221, 221, 221);
   list-style-type: none;
-  margin: 5px 0px;
-  height: 200px;
-  width: 500px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 #lista ul {
-  margin-bottom: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .products {
   visibility: hidden;
@@ -91,8 +111,60 @@ h3 {
   visibility: hidden;
 }
 .koszyk-produkty {
-  width: 100px;
-  heigh: 50px;
+  width: 80%;
+  overflow: auto;
+  max-height: 500px;
+  min-height: 200px;
+  border-radius: 15px;
 }
-.koszyk-produkty li {
+#dane label {
+  font-size: 18px;
+  color: black;
+}
+.kodPocztowy,
+.miasto,
+.adres,
+.dostawa,
+.email {
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(187, 187, 187);
+  transition: all 0.25s;
+  outline: none;
+  background: transparent;
+  margin: 10px 0;
+  width: 250px;
+}
+.kodPocztowy:focus-within,
+.miasto:focus-within,
+.adres:focus-within,
+.dostawa:focus-within,
+.email:focus-within {
+  background-color: #f9f9fb;
+  box-shadow: 0 0 5px rgb(142, 185, 77);
+}
+#zamow {
+  width: 250px;
+  margin: 20px 0;
+  font-size: 17px;
+}
+@media (max-width: 624px) {
+  #lista {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  #podsumowanie {
+    width: 80%;
+  }
+  #dane {
+    padding: 0 -20px;
+  }
+}
+@media (min-width: 625px) and (max-width: 1024px) {
+  #lista {
+    width: 90%;
+  }
 }

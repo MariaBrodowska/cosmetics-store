@@ -1,0 +1,309 @@
+[
+  {
+    "kodPocztowy": "57-057",
+    "miasto": "jutyfkugf",
+    "adres": "kjgfkjhfjhfjk",
+    "platnosc": "blik",
+    "dostawa": "przesylka",
+    "email": "adas123@gmail.com",
+    "wartoscKoszyka": 112.61,
+    "razem": 124.6,
+    "data": "19-05-2024 15:19:19",
+    "produkty": [
+      {
+        "id": 12300004,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid4.png",
+        "name": "Mixa, oczyszczający żel myjący do twarzy przeciw niedoskonałościom 200 ml",
+        "ratingStars": "zdjecia_produkty/stars/3.png",
+        "rating": 31,
+        "price": "2699",
+        "quantity": 3
+      },
+      {
+        "id": 12300008,
+        "category": "twarz",
+        "subcategory": "twarz-pu",
+        "image": "zdjecia_produkty/twarz/pu2.png",
+        "name": "Mokosh, balsam do ust malina 15 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 4,
+        "price": "3164",
+        "quantity": 1
+      }
+    ],
+    "nr": "c0ad6162-94e8"
+  },
+  {
+    "kodPocztowy": "12-321",
+    "miasto": "Lublin",
+    "adres": "Słoneczna 21",
+    "platnosc": "gotowka",
+    "dostawa": "kurier",
+    "email": "adas123@gmail.com",
+    "wartoscKoszyka": 170.41,
+    "razem": 187.4,
+    "data": "19-05-2024 15:52:42",
+    "produkty": [
+      {
+        "id": 12300004,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid4.png",
+        "name": "Mixa, oczyszczający żel myjący do twarzy przeciw niedoskonałościom 200 ml",
+        "ratingStars": "zdjecia_produkty/stars/3.png",
+        "rating": 31,
+        "price": "2699",
+        "quantity": 2
+      },
+      {
+        "id": 12300003,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid3.png",
+        "name": "Mixa, dwufazowy płyn do demakijażu 125ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 10,
+        "price": "1839",
+        "quantity": 1
+      },
+      {
+        "id": 12300001,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid.png",
+        "name": "CeraVe, oczyszczający żel do mycia z ceramidami dla skóry normalnej i tłustej,  236 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 21,
+        "price": "4902",
+        "quantity": 2
+      }
+    ],
+    "nr": "18ee41d7-9429"
+  },
+  {
+    "kodPocztowy": "21-121",
+    "miasto": "Lublin",
+    "adres": "Lipowa 123",
+    "platnosc": "blik",
+    "dostawa": "przesylka",
+    "email": "maria@o2.pl",
+    "wartoscKoszyka": 63.28,
+    "razem": 75.27,
+    "data": "19-05-2024 16:09:57",
+    "produkty": [
+      {
+        "id": 12300008,
+        "category": "twarz",
+        "subcategory": "twarz-pu",
+        "image": "zdjecia_produkty/twarz/pu2.png",
+        "name": "Mokosh, balsam do ust malina 15 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 4,
+        "price": "3164",
+        "quantity": 2
+      }
+    ],
+    "nr": "aa6085ed-11d3"
+  },
+  {
+    "kodPocztowy": "12-123",
+    "miasto": "Lublin",
+    "adres": "dlhbhh",
+    "platnosc": "karta",
+    "dostawa": "kurier",
+    "email": "mariaa@o2.pl",
+    "wartoscKoszyka": 502.09,
+    "razem": 519.0799999999999,
+    "data": "21-05-2024 11:37:45",
+    "produkty": [
+      {
+        "id": 12300008,
+        "category": "twarz",
+        "subcategory": "twarz-pu",
+        "image": "zdjecia_produkty/twarz/pu2.png",
+        "name": "Mokosh, balsam do ust malina 15 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 4,
+        "price": "3164",
+        "quantity": 4
+      },
+      {
+        "id": 12300004,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid4.png",
+        "name": "Mixa, oczyszczający żel myjący do twarzy przeciw niedoskonałościom 200 ml",
+        "ratingStars": "zdjecia_produkty/stars/3.png",
+        "rating": 31,
+        "price": "2699",
+        "quantity": 1
+      },
+      {
+        "id": 12300005,
+        "category": "twarz",
+        "subcategory": "twarz-pt",
+        "image": "zdjecia_produkty/twarz/pt.png",
+        "name": "Holika Holika, aloe soothinf essence - pielęgnacja na codzień 100 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 14,
+        "price": "15900",
+        "quantity": 2
+      },
+      {
+        "id": 12300002,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid2.png",
+        "name": "Ziaja Med, płyn micelarny do demakijażu 200ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 82,
+        "price": "1215",
+        "quantity": 1
+      },
+      {
+        "id": 12300003,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid3.png",
+        "name": "Mixa, dwufazowy płyn do demakijażu 125ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 10,
+        "price": "1839",
+        "quantity": 1
+      }
+    ],
+    "nr": "31ef7d03-b680"
+  },
+  {
+    "kodPocztowy": "12-123",
+    "miasto": "Lublin",
+    "adres": "dlhbhh",
+    "platnosc": "karta",
+    "dostawa": "kurier",
+    "email": "mariaa@o2.pl",
+    "wartoscKoszyka": 502.09,
+    "razem": 519.0799999999999,
+    "data": "21-05-2024 11:37:45",
+    "produkty": [
+      {
+        "id": 12300008,
+        "category": "twarz",
+        "subcategory": "twarz-pu",
+        "image": "zdjecia_produkty/twarz/pu2.png",
+        "name": "Mokosh, balsam do ust malina 15 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 4,
+        "price": "3164",
+        "quantity": 4
+      },
+      {
+        "id": 12300004,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid4.png",
+        "name": "Mixa, oczyszczający żel myjący do twarzy przeciw niedoskonałościom 200 ml",
+        "ratingStars": "zdjecia_produkty/stars/3.png",
+        "rating": 31,
+        "price": "2699",
+        "quantity": 1
+      },
+      {
+        "id": 12300005,
+        "category": "twarz",
+        "subcategory": "twarz-pt",
+        "image": "zdjecia_produkty/twarz/pt.png",
+        "name": "Holika Holika, aloe soothinf essence - pielęgnacja na codzień 100 ml",
+        "ratingStars": "zdjecia_produkty/stars/4.png",
+        "rating": 14,
+        "price": "15900",
+        "quantity": 2
+      },
+      {
+        "id": 12300002,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid2.png",
+        "name": "Ziaja Med, płyn micelarny do demakijażu 200ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 82,
+        "price": "1215",
+        "quantity": 1
+      },
+      {
+        "id": 12300003,
+        "category": "twarz",
+        "subcategory": "twarz-oid",
+        "image": "zdjecia_produkty/twarz/oid3.png",
+        "name": "Mixa, dwufazowy płyn do demakijażu 125ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 10,
+        "price": "1839",
+        "quantity": 1
+      }
+    ],
+    "nr": "6201a212-587c"
+  },
+  {
+    "kodPocztowy": "12-134",
+    "miasto": "Lublin",
+    "adres": "Sloneczna 12",
+    "platnosc": "blik",
+    "dostawa": "przesylka",
+    "email": "mariaa@o2.pl",
+    "wartoscKoszyka": 111.05,
+    "razem": 123.03999999999999,
+    "data": "21-05-2024 11:51:21",
+    "produkty": [
+      {
+        "id": 12300006,
+        "category": "twarz",
+        "subcategory": "twarz-pt",
+        "image": "zdjecia_produkty/twarz/pt2.png",
+        "name": "Cerave, nawilżający krem do twarzy 52 ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 77,
+        "price": "4533",
+        "quantity": 2
+      },
+      {
+        "id": 12300009,
+        "category": "makijaz",
+        "subcategory": "makijaz-t",
+        "image": "zdjecia_produkty/makijaz/t.png",
+        "name": "Eveline better than perfect podkład do twarzy 1 ivory neutral 30ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 23,
+        "price": "2039",
+        "quantity": 1
+      }
+    ],
+    "nr": "37b46bb4-b031"
+  },
+  {
+    "kodPocztowy": "43-466",
+    "miasto": "Warszawa",
+    "adres": "vuyvy",
+    "platnosc": "karta",
+    "dostawa": "przesylka",
+    "email": "mariaa@o2.pl",
+    "wartoscKoszyka": 45.33,
+    "razem": "57.32",
+    "data": "21-05-2024 11:54:37",
+    "produkty": [
+      {
+        "id": 12300006,
+        "category": "twarz",
+        "subcategory": "twarz-pt",
+        "image": "zdjecia_produkty/twarz/pt2.png",
+        "name": "Cerave, nawilżający krem do twarzy 52 ml",
+        "ratingStars": "zdjecia_produkty/stars/5.png",
+        "rating": 77,
+        "price": "4533",
+        "quantity": 1
+      }
+    ],
+    "nr": "0f2c4d4b-acb0"
+  }
+]

@@ -75,3 +75,13 @@ h3 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 624px) {
+  #zalozKonto {
+    width: 200px;
+  }
+}
+@media (min-width: 625px) and (max-width: 1024px) {
+  #zalozKonto {
+    width: 300px;
+  }
+}

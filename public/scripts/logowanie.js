@@ -9,7 +9,7 @@ function zaloguj() {
     haslo: document.querySelector(".hasloLog").value,
   };
   console.log("po stronie uzytkownika: " + data);
-  fetch("/api/logowanie", {
+  fetch("/api/users/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,10 +18,12 @@ function zaloguj() {
   })
     .then((response) => response.json())
     .then((data) => {
-      if (data === false) {
+      if (!data) {
         tekstLog.innerHTML = "Podano błędny login lub hasło";
       } else {
         tekstLog.innerHTML = "Zalogowano!";
+        console.log("token: " + JSON.stringify(data));
+        sessionStorage.setItem("token", JSON.stringify(data));
         document.querySelector(".emailLog").value = "";
         document.querySelector(".hasloLog").value = "";
       }
@@ -30,5 +32,6 @@ function zaloguj() {
     .catch((error) => console.error(error));
 }
 oknoCloseLog.addEventListener("click", () => {
+  if (tekstLog.innerHTML === "Zalogowano!") window.location.href = "/";
   oknoLog.close();
 });

@@ -3,6 +3,10 @@ const tekst = document.querySelector("#tekst");
 const oknoClose = document.querySelector("#oknoClose");
 
 function zarejestruj() {
+  let formularz = document.getElementById("zalozKonto");
+  if (!formularz.checkValidity()) {
+    return;
+  }
   console.log("wcisnieto przycisk");
 
   const data = {

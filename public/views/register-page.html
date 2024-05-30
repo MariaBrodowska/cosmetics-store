@@ -21,40 +21,58 @@
       <span id="cosmetics">cosmetics</span>
     </div>
     <button type="button" onclick="closeRegister()" id="return">
-      <img src="/zdjecia/return.png" />
+      <img src="/zdjecia/return.png" alt="zamknij" />
     </button>
     <main>
       <h3>Załóż konto</h3>
       <form id="zalozKonto" onsubmit="return false">
         * pola obowiązdkowe<br /><br />
-        <label>Adres e-mail*</label><br /><input
-          class="email"
+        <label>Imię*</label><br /><input
+          class="imie"
           type="text"
+          required
+          pattern="^[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,20}$"
+          title="Podaj imię złożone z od 2 do 20 liter"
         /><br />
-        <label>Hasło*</label><br /><input class="haslo" type="password" /><br />
-        <label>Imię*</label><br /><input class="imie" type="text" /><br />
         <label>Nazwisko*</label><br /><input
           class="nazwisko"
           type="text"
-        /><br />
-        <label>Numer telefonu</label><br /><input
-          class="tel"
-          type="text"
+          required
+          pattern="^[a-zA-ZąćęłńóśżźĄĆĘŁŃÓŚŻŹ]{2,40}$"
+          title="Podaj nazwisko złożone z od 2 do 40 liter"
         /><br />
         <label>Data urodzenia</label><br /><input
           class="dataUrodzenia"
           type="date"
         /><br />
+        <label>Numer telefonu</label><br /><input
+          class="tel"
+          type="tel"
+          pattern="[0-9]{9}"
+          title="Podaj numer złożony z 9 cyfr"
+        /><br />
+        <label>Adres e-mail*</label><br /><input
+          class="email"
+          type="email"
+          required
+        /><br />
+        <label>Hasło*</label><br /><input
+          class="haslo"
+          type="password"
+          required
+          pattern="^.{6,}$"
+          title="Podaj co najmniej 6 znaków"
+        /><br />
         <div id="check">
           <input type="checkbox" id="zgoda" value="zgoda" required /><a
-            id="zgoda"
-            href="/regulamin"
+            class="zgoda"
+            href="#"
             >*Zapoznałem/am się z zasadami korzystania z serwisu.</a
           >
         </div>
         <br />
         <div id="check1">
-          <input type="checkbox" id="zgoda2" value="zgoda2" /><a id="zgoda"
+          <input type="checkbox" id="zgoda2" value="zgoda2" /><a class="zgoda"
             >Chcę otrzymywać informacje o produktach i usługach.</a
           >
         </div>

@@ -1,6 +1,8 @@
 body {
   background: #fff6e9;
   margin-top: 0;
+  height: 100%;
+  min-height: 100vh;
 }
 #logo {
   display: flex;
@@ -20,6 +22,9 @@ nav {
   align-items: center;
   margin-bottom: 8px;
 }
+.menu-toggle {
+  margin-right: auto;
+}
 #nav2 {
   display: flex;
   justify-content: center;
@@ -28,6 +33,10 @@ nav {
   flex-wrap: wrap;
   margin-left: 0;
   margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+  padding-right: 0;
+  padding-left: 0;
 }
 #nav1 img,
 #avatar {
@@ -95,11 +104,8 @@ nav {
 #nav2 a:hover {
   color: rgb(118, 179, 27);
 }
-#nav2 li ul {
-  overflow: hidden;
-  display: none;
-}
-#nav2 ul li {
+#nav2 ul li,
+.tresc ul li {
   text-decoration: none;
   list-style-type: none;
   text-align: center;
@@ -130,6 +136,7 @@ nav {
   margin: 2% 0;
   padding: 10px 10px;
   width: 200px;
+  z-index: 1000;
 }
 header {
   font-size: 40px;
@@ -205,20 +212,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  animation: slideInLeft 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: slideInLeft 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #baner3 {
   grid-area: 1 / 3 / 3;
   text-align: center;
-  animation: slideInRight 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: slideInRight 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #baner2 {
   grid-area: 2 / 1;
-  animation: slideInLeft 1s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: slideInLeft 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #baner4 {
   grid-area: 2 / 2;
-  animation: slideInRight 1s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: slideInRight 0.7s cubic-bezier(0.19, 1, 0.22, 1);
   background: url("/zdjecia/tlo5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -246,6 +253,7 @@ footer {
   text-align: center;
   padding: 10px;
   color: white;
+  margin-top: 10px;
 }
 #opis {
   text-align: center;
@@ -284,7 +292,7 @@ h2 {
 }
 .user {
   width: 700px;
-  height: 70%;
+  height: 60%;
   background-color: white;
   position: absolute;
   top: 0%;
@@ -295,10 +303,12 @@ h2 {
   border-bottom: 5px dashed black;
   border-right: 5px dashed black;
   visibility: hidden;
+  transition-duration: 0.1s;
   transition: transform 0.4s, top 0.4s;
   -webkit-box-shadow: 0px 0px 250px 300px rgba(0, 0, 0, 0.68);
   -moz-box-shadow: 0px 0px 250px 300px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 250px 300px rgba(0, 0, 0, 0.68);
+  z-index: 1000;
 }
 .open-user {
   visibility: visible;
@@ -342,7 +352,8 @@ h2 {
   font-size: 10px;
   color: black;
 }
-#zgoda {
+#zgoda,
+.zgoda {
   font-size: 14px;
   color: rgb(101, 133, 53);
 }
@@ -396,6 +407,12 @@ input[type="checkbox"]:focus-within {
   border-radius: 20px;
   border: 4px dashed rgb(142, 185, 77);
   visibility: hidden;
+}
+#tlo {
+  z-index: 1000;
+}
+#baner1:hover {
+  cursor: pointer;
 }
 #character:hover {
   cursor: pointer;
@@ -513,13 +530,7 @@ input[type="checkbox"]:focus-within {
 .product-name {
   margin: 0;
   padding: 0;
-  /* font-weight: bold;
-  width: 100%;
-  font-size: 19px; */
 }
-/* .product-description {
-  font-size: 14px;
-} */
 .product-image img {
   width: 130px;
   padding: 10px;
@@ -530,13 +541,13 @@ input[type="checkbox"]:focus-within {
 }
 .product-stars {
   display: flex;
-  align-items: center;
+  justify-content: center;
   font-size: 15px;
   margin: 3px 0;
   width: 100%;
 }
 .product-stars img {
-  width: 70px;
+  width: 100px;
 }
 .id {
   font-size: 9px;
@@ -547,22 +558,15 @@ input[type="checkbox"]:focus-within {
   width: 100%;
   padding: 2px 0;
   font-weight: bold;
+  text-align: center;
 }
 .product-container .przycisk {
   width: 200px;
   height: 45px;
   font-size: 12px;
-  /* background-color: rgb(138, 185, 68);
-  color: white;
-  border: none; */
   border-radius: 60px;
   margin: 10px 0;
 }
-.product-container input {
-}
-/* .product-container .przycisk:hover {
-  background-color: rgb(95, 128, 46);
-} */
 .wyniki-wyszukiwania {
   width: 100%;
   font-size: 20px;
@@ -583,7 +587,167 @@ input[type="checkbox"]:focus-within {
   text-align: center;
   width: 80px;
 }
-#przycisk {
+#przycisk,
+#przycisk2 {
   display: flex;
   justify-content: center;
+}
+.user {
+  position: fixed;
+}
+#nav2 li ul {
+  display: none;
+  position: absolute;
+}
+#baner1,
+#baner2,
+#baner3,
+#baner4 {
+  position: relative;
+  z-index: 1;
+}
+#tekstDodano {
+  font-size: 15px;
+  text-align: center;
+}
+#tekstDodano1 {
+  font-size: 18px;
+  text-align: center;
+}
+#oknoDodano .przycisk {
+  font-size: 10px;
+  width: 100px;
+  margin: 5px;
+}
+#oknoDodano {
+  width: 300px;
+}
+
+.menu-toggle {
+  display: block;
+  position: fixed;
+  left: 30px;
+  top: 105px;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.072);
+  backdrop-filter: blur(20px);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.dot {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.454);
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 0 10px rgb(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 150px 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  padding: 0 30px;
+  width: 100%;
+  transition: all 0.5s;
+}
+.sidebar a:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 5px 23px;
+}
+.sidebar li {
+  width: 100%;
+  padding: 10px 0;
+}
+.sidebar ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+.sidebar ul li {
+  padding: 3px 5px;
+  font-size: 15px;
+}
+.sidebar ul.open {
+  display: flex;
+  max-height: 500px;
+}
+
+.sidebar ul.close {
+  max-height: 0;
+}
+@media (max-width: 890px) {
+  #nav2 {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (min-width: 891px) {
+  #nav2 {
+    display: flex;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 624px) {
+  #opis {
+    font-size: 13px;
+  }
+  .dolacz {
+    font-size: 13px;
+  }
+  .products {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 90%;
+  }
+  .user {
+    width: 400px;
+  }
+}
+@media (min-width: 625px) and (max-width: 1024px) {
+  #opis {
+    font-size: 16px;
+  }
+  .dolacz {
+    font-size: 16px;
+  }
+  .products {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 48% 48%;
+  }
+  .user {
+    width: 600px;
+  }
 }

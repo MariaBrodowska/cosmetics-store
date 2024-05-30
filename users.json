@@ -1,9 +1,59 @@
 [
   {
     "email": "admin@gmail.com",
-    "haslo": "admin",
-    "imie": "admin",
-    "nazwisko": "admin",
-    "tel": "123456789"
+    "haslo": "$2b$10$vrJo5x8Bq2AwtM3ZUR4f0OsVZcCksB/3/kQpgRoCNTM/m54xAHpDq",
+    "imie": "imie",
+    "nazwisko": "nazw"
+  },
+  {
+    "email": "maria@gmail.com",
+    "imie": "marys",
+    "nazwisko": "br",
+    "tel": "123123127",
+    "dataUrodzenia": "2024-05-31",
+    "haslo": "$2b$10$OPX6K6bbwiCUhVZ/Ou6gjeKXVyqI4VJVcOF.5H.OJ5xGcVSJmhlsu"
+  },
+  {
+    "email": "maria123@gmail.com",
+    "haslo": "$2b$10$qrgG/5QaUgs9Og1c1Q8bNeBIcul8LltLETSL.YM2rARwmAzd/0Fqm",
+    "imie": "",
+    "nazwisko": ""
+  },
+  {
+    "email": "adas123@gmail.com",
+    "imie": "adas",
+    "nazwisko": "brzek",
+    "tel": "123123123",
+    "dataUrodzenia": "2024-01-27",
+    "haslo": "$2b$10$/dhDBngDIuEMNvlRg8S6/uJnQXHXtU.6QG9JjDeVR0rNQN9wEKBhK"
+  },
+  {
+    "email": "aaaaa@b.c",
+    "imie": "Adam",
+    "nazwisko": "Ul",
+    "tel": "123456789",
+    "dataUrodzenia": "2024-05-15",
+    "haslo": "$2b$10$xaHa2XdcOSBpB3cXZZr9yeG49gemW5NVSKJFJINKWeCUBcfWux5s6"
+  },
+  {
+    "email": "maria@o2.pl",
+    "imie": "Maria",
+    "nazwisko": "hgk",
+    "tel": "333767676",
+    "dataUrodzenia": "2024-05-10",
+    "haslo": "$2b$10$9tCZrYgmWx55kmbBx6iDC.hMFRSAqyXB4AGyGnraR7DZH950vVZIy"
+  },
+  {
+    "email": "cos123@o2.pl",
+    "imie": "vjhvhj",
+    "nazwisko": "kjhg",
+    "haslo": "$2b$10$52XGrzpkeJtYjbONzavr6ezu8aRkZ92130vky3JCXw7K/hiBVWvRG"
+  },
+  {
+    "email": "mariaa@o2.pl",
+    "imie": "Mariaa",
+    "nazwisko": "Br",
+    "dataUrodzenia": "2024-05-17",
+    "haslo": "$2b$10$pkMkAFomjiEaFInFgGSpXOw5BbIqBDY/dDrXVD0MeAFShtkwC0G2S"
   }
 ]
