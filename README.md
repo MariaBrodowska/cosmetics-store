@@ -29,8 +29,8 @@ Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są 
 ### Przeglądanie produktów oraz responsywna nawigacja
 Możliwość przeglądania oferty na stronie głównej, wyszukiwania frazy oraz wyświetlania produktów po kategorii przy użyciu nawigacji.
 
-![wys1](https://raw.github.com/MariaBrodowska/cosmetics-store/master/assets/wys1.gif)
-![wys2](https://raw.github.com/MariaBrodowska/cosmetics-store/master/assets/wys2.gif)
+![wys1](https://raw.github.com/MariaBrodowska/cosmetics-store/master/assets/wys1.mp4)
+![wys2](https://raw.github.com/MariaBrodowska/cosmetics-store/master/assets/wys2.mp4)
 
 ### Koszyk
 Dodawanie i usuwanie produktów z koszyka
