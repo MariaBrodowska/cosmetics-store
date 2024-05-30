@@ -11,16 +11,27 @@ Aplikacja zawiera funkcje rejestracji użytkownika, logowania oraz umożliwia sk
 Użytkownicy mogą rejestrować się oraz logować do swoich kont, używając JWT (JSON Web Token) do bezpiecznej autoryzacji. Umożliwia dostęp do chronionych zasobów jedynie uprawnionym użytkownikom.
 Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są hashowane.
 
-<table>
-  <tr>
-    <td style="width: 50%; text-align: center;"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2" style="width: 100%; max-width: 100%;"/></td>
-    <td style="width: 50%; text-align: center;"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3" style="width: 100%; max-width: 100%;"/></td>
-  </tr>
-  <tr>
-    <td style="width: 50%; text-align: center;"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1" style="width: 100%; max-width: 100%;"/></td>
-    <td style="width: 50%; text-align: center;"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4" style="width: 100%; max-width: 100%;"/></td>
-  </tr>
-</table>
+<div align="center">
+  <table style="width: 100%; table-layout: fixed;">
+    <tr>
+      <td style="width: 50%; text-align: center; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2" style="width: 100%; max-width: 100%;"/>
+      </td>
+      <td style="width: 50%; text-align: center; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3" style="width: 100%; max-width: 100%;"/>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50%; text-align: center; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1" style="width: 100%; max-width: 100%;"/>
+      </td>
+      <td style="width: 50%; text-align: center; vertical-align: top;">
+        <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4" style="width: 100%; max-width: 100%;"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
 <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5" width="100%"/>
 
 ### Przeglądanie produktów oraz responsywna nawigacja
