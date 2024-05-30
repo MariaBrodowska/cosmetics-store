@@ -13,15 +13,15 @@ Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są 
 
 <table align="center">
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2" width="50%"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3" width="50%"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1" width="50%"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4" width="50%"/></td>
   </tr>
 </table>
-<img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5"/>
+<img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5" width="100%"/>
 
 ### Przeglądanie produktów oraz responsywna nawigacja
 Możliwość przeglądania oferty na stronie głównej, wyszukiwania frazy oraz wyświetlania produktów po kategorii przy użyciu nawigacji.
