@@ -11,14 +11,14 @@ Aplikacja zawiera funkcje rejestracji użytkownika, logowania oraz umożliwia sk
 Użytkownicy mogą rejestrować się oraz logować do swoich kont, używając JWT (JSON Web Token) do bezpiecznej autoryzacji. Umożliwia dostęp do chronionych zasobów jedynie uprawnionym użytkownikom.
 Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są hashowane.
 
-<table>
+<table align="center">
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2" width="50%"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3" width="50%"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3"/></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1" width="50%"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4" width="50%"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4"/></td>
   </tr>
 </table>
 
