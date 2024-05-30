@@ -25,6 +25,7 @@ Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są 
 </table>
 
 <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5" width="100%"/>
+<img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/image.png" alt="Logowanie 6" width="100%"/>
 
 ### Przeglądanie produktów oraz responsywna nawigacja
 Możliwość przeglądania oferty na stronie głównej, wyszukiwania frazy oraz wyświetlania produktów po kategorii przy użyciu nawigacji.
