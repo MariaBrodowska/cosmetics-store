@@ -16,6 +16,8 @@ Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są 
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2"/></td>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3"/></td>
   </tr>
+</table>
+<table align="center">
   <tr>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1"/></td>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4"/></td>
@@ -35,8 +37,8 @@ Dodawanie i usuwanie produktów z koszyka
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/kosz1.png" alt="Koszyk 1" width="200"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/kosz2.png" alt="Koszyk 2" width="200"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/kosz1.png" alt="Koszyk 1"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/kosz2.png" alt="Koszyk 2"/></td>
   </tr>
 </table>
 
@@ -45,19 +47,18 @@ Uzupełnianie danych zamówienia oraz możliwość przeglądania już złożonyc
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/zam1.png" alt="Zamówienie 1" width="200"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/zam2.png" alt="Zamówienie 2" width="200"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/zam1.png" alt="Zamówienie 1"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/zam2.png" alt="Zamówienie 2"/></td>
   </tr>
 </table>
 
 ### Zarządzanie profilem użytkownika
 Zarejestrowani klienci mogą przeglądać oraz modyfikować swoje dane profilowe.
-
+<img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy1.png" alt="Profil 1"/>
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy1.png" alt="Profil 1" width="200"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy2.png" alt="Profil 2" width="200"/></td>
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy3.png" alt="Profil 3" width="200"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy2.png" alt="Profil 2"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy3.png" alt="Profil 3"/></td>
   </tr>
 </table>
 
