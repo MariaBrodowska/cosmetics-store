@@ -12,14 +12,16 @@ Użytkownicy mogą rejestrować się oraz logować do swoich kont, używając JW
 Dane użytkowników są bezpiecznie przechowywane na serwerze, a ich hasła są hashowane.
 
 <table align="center">
-  <tr width="400px">
-    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1"/></td>
+  <tr>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log2.png" alt="Logowanie 2"/></td>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log3.png" alt="Logowanie 3"/></td>
   </tr>
-  <tr align="center"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4"/></tr>
-  <tr align="center"><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5"/></tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log1.png" alt="Logowanie 1"/></td>
+    <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log4.png" alt="Logowanie 4"/></td>
+  </tr>
 </table>
+<img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/log5.png" alt="Logowanie 5"/>
 
 ### Przeglądanie produktów oraz responsywna nawigacja
 Możliwość przeglądania oferty na stronie głównej, wyszukiwania frazy oraz wyświetlania produktów po kategorii przy użyciu nawigacji.
