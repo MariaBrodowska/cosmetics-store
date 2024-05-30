@@ -55,7 +55,7 @@ Uzupełnianie danych zamówienia oraz możliwość przeglądania już złożonyc
 ### Zarządzanie profilem użytkownika
 Zarejestrowani klienci mogą przeglądać oraz modyfikować swoje dane profilowe.
 <img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy1.png" alt="Profil 1"/>
-<table>
+<table width="200%">
   <tr>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy2.png" alt="Profil 2"/></td>
     <td><img src="https://raw.githubusercontent.com/MariaBrodowska/cosmetics-store/master/assets/uzy3.png" alt="Profil 3"/></td>
